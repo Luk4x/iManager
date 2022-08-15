@@ -1,0 +1,41 @@
+.footer {
+    background: #020122;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+.socials svg {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.socials svg:hover {
+    color: #ff521b;
+}
+
+.socials button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.footer p span {
+    color: #ff521b;
+}

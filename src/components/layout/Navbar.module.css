@@ -1,0 +1,56 @@
+.iconLogo {
+    color: #ff521b;
+    font-size: 70px;
+    border: 4px solid #fc9e4f;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: #020122;
+    padding: 15px 30px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 8px;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    position: relative;
+    top: 12px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.list li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.list li a:hover {
+    color: #ff521b;
+}
+
+@media screen and (max-width: 500px) {
+    .list li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .list {
+        top: 0;
+        justify-content: center;
+    }
+
+    .list li {
+        padding-top: 6.5px;
+    }
+}

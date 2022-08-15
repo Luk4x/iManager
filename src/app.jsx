@@ -1,37 +1,26 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Home from './components/pages/Home';
+import Projects from './components/pages/Projects';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import CreateProject from './components/pages/CreateProject';
-import Home from './components/pages/Home';
 
 import Container from './components/layout/Container';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 
 export default function App() {
     return (
         <Router>
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/company">Empresa</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contato</Link>
-                        </li>
-                        <li>
-                            <Link to="/create-project">Criar Projeto</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <Navbar />
             <Switch>
                 <Container customClass="minHeight">
                     <Route exact path="/">
                         <Home />
+                    </Route>
+                    <Route path="/projects">
+                        <Projects />
                     </Route>
                     <Route path="/company">
                         <Company />
@@ -44,7 +33,7 @@ export default function App() {
                     </Route>
                 </Container>
             </Switch>
-            <footer>Footer</footer>
+            <Footer />
         </Router>
     );
 }
