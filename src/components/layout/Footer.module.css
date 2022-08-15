@@ -1,5 +1,5 @@
 .footer {
-    background: #020122;
+    background: #2d3142;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,11 +17,11 @@
 
 .socials svg {
     font-size: 25px;
-    color: whitesmoke;
+    color: #bfc0c0;
 }
 
 .socials svg:hover {
-    color: #ff521b;
+    color: #ef8354;
 }
 
 .socials button {
@@ -32,10 +32,10 @@
 
 .footer p {
     margin-top: 10px;
-    color: whitesmoke;
+    color: #bfc0c0;
     font-weight: 500;
 }
 
 .footer p span {
-    color: #ff521b;
+    color: #ef8354;
 }
