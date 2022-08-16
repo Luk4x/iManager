@@ -1,4 +1,7 @@
 .iconLogo {
+    position: absolute;
+    top: 15px;
+    left: 30px;
     color: #ef8354;
     font-size: 70px;
     border: 4px solid #4f5d75;
@@ -7,10 +10,10 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
     background: #2d3142;
-    padding: 15px 30px;
+    padding: 22px 30px 42px 110px;
 }
 
 .list {
@@ -21,8 +24,6 @@
     padding: 0 8px;
     height: 40px;
     border-bottom: 1px solid #bfc0c0;
-    position: relative;
-    top: 12px;
     margin: 0 auto;
     flex-wrap: wrap;
 }

@@ -1,0 +1,41 @@
+.inputContainer {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 6px;
+}
+
+.inputContainer label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #4f5d75;
+}
+
+.inputContainer input {
+    padding: 1px 5px;
+    border: none;
+    border-bottom: 2px solid #2d3142;
+    color: #4f5d75;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    background: #eee;
+}
+
+.inputContainer input::placeholder {
+    color: gray;
+}
+
+/* hide input number arrows Chrome, Safari, Edge, Opera */
+.inputContainer input::-webkit-outer-spin-button,
+.inputContainer input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* hide input number arrows Firefox */
+.inputContainer input[type='number'] {
+    -moz-appearance: textfield;
+}
