@@ -1,4 +1,5 @@
 import styles from './Home.module.css';
+import LinkButton from '../layout/LinkButton';
 import { GiReceiveMoney } from 'react-icons/gi';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
                 </span>
             </h1>
             <p>Comece a gerenciar seus projetos agora mesmo!</p>
-            <a href="/">Criar Projeto</a>
+            <LinkButton to="/create-project">Criar Projeto</LinkButton>
             <GiReceiveMoney />
         </section>
     );

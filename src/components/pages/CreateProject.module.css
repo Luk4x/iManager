@@ -1,0 +1,21 @@
+.projectContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px;
+    gap: 15px;
+}
+
+.projectContainer h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #2d3142;
+}
+
+.projectContainer p {
+    font-size: 18px;
+    color: #2d3142;
+    margin-bottom: 10px;
+}

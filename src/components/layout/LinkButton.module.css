@@ -1,0 +1,16 @@
+.linkButton {
+    text-decoration: none;
+    font-size: 20px;
+    background: #2d3142;
+    padding: 10px;
+    border-radius: 5px;
+    color: #bfc0c0;
+    margin-bottom: 50px;
+    transition: all ease-in-out .2s;
+    box-shadow: 1px 1px 10px #0000004f;
+}
+
+.linkButton:hover {
+    color: #ef8354;
+    transform: scale(1.1);
+}

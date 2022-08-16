@@ -18,6 +18,7 @@
 .socials svg {
     font-size: 25px;
     color: #bfc0c0;
+    transition: all ease-in-out .2s;
 }
 
 .socials svg:hover {
