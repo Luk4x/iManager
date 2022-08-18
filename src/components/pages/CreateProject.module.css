@@ -5,17 +5,17 @@
     justify-content: flex-start;
     align-items: center;
     padding: 60px;
-    gap: 15px;
+    gap: 20px;
 }
 
 .projectContainer h2 {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 44px;
     color: #2d3142;
 }
 
 .projectContainer p {
-    font-size: 20px;
+    font-size: 22px;
     color: #4f5d75;
     margin-bottom: 10px;
 }

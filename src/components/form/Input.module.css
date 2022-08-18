@@ -5,11 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 6px;
+    gap: 8px;
 }
 
 .inputContainer label {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
     color: #4f5d75;
 }
@@ -18,15 +18,15 @@
     padding: 1px 5px;
     border: none;
     border-bottom: 2px solid #2d3142;
-    color: #4f5d75;
+    color: #2d3142;
     outline: none;
-    font-size: 16px;
+    font-size: 17px;
     width: 100%;
     background: #eee;
 }
 
 .inputContainer input::placeholder {
-    color: gray;
+    color: #333;
 }
 
 /* hide input number arrows Chrome, Safari, Edge, Opera */

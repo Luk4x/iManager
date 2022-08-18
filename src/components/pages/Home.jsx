@@ -12,7 +12,7 @@ export default function Home() {
                 </span>
             </h1>
             <p>Comece a gerenciar seus projetos agora mesmo!</p>
-            <LinkButton to="/create-project">Criar Projeto</LinkButton>
+            <LinkButton to="/create-project">Começar</LinkButton>
             <GiReceiveMoney />
         </section>
     );
