@@ -4,10 +4,11 @@ import styles from './ProjectForm.module.css';
 
 import Input from '../form/Input';
 import Select from '../form/Select';
-import LinkButton from '../layout/LinkButton';
+import SubmitButton from '../form/SubmitButton';
 
-export default function ProjectForm() {
+export default function ProjectForm({ btnText, handleSubmit, projectData }) {
     const [categories, setCategories] = useState([]);
+    const [project, setProject] = useState(projectData || {});
 
     useEffect(() => {
         fetch('http://localhost:5000/categories', {
@@ -21,14 +22,31 @@ export default function ProjectForm() {
             .catch(err => console.error(err));
     }, []);
 
+    const submit = e => {
+        e.preventDefault();
+        handleSubmit(project);
+    };
+
+    const handleInput = e => {
+        setProject({ ...project, [e.target.name]: e.target.value });
+    };
+
+    function handleCategory(e) {
+        setProject({
+            ...project,
+            category: {
+                id: e.target.value,
+                name: e.target.options[e.target.selectedIndex].text
+            }
+        });
+    }
+
     return (
-        <form className={styles.form}>
-            <Input type="text" name="formProjectName" placeholder="Insira o nome do Projeto" labelContent="Nome do Projeto" />
-            <Input type="number" name="formProjectBudget" placeholder="Insira o orçamento total" labelContent="Orçamento do Projeto" />
-            <Select name="category" labelContent="Selecione uma categoria" options={categories} />
-            <LinkButton to="#" type="submit">
-                Criar Projeto
-            </LinkButton>
+        <form onSubmit={submit} className={styles.form}>
+            <Input type="text" name="formProjectName" placeholder="Insira o nome do Projeto" labelContent="Nome do Projeto" onChange={handleInput} />
+            <Input type="number" name="formProjectBudget" placeholder="Insira o orçamento total" labelContent="Orçamento do Projeto" onChange={handleInput} />
+            <Select name="category" labelContent="Selecione uma categoria" options={categories} onChange={handleCategory} value={project.category ? project.category.id : ''} />
+            <SubmitButton type="submit">{btnText}</SubmitButton>
         </form>
     );
 }
