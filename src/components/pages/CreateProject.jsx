@@ -21,7 +21,7 @@ export default function CreateProject() {
             .then(data => {
                 console.log(data);
                 //redirect
-                history.push('/projects', { message: 'Projeto criado com sucesso!' });
+                history.push('/projects', { message: 'Projeto criado com sucesso!', type: 'success' });
             })
             .catch(err => console.log(err));
     }
