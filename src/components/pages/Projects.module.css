@@ -1,0 +1,15 @@
+.project {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.titleContainer > h2 {
+    font-size: 40px;
+    font-weight: 300;
+}

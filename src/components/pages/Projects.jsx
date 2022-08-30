@@ -1,5 +1,8 @@
 import { useLocation } from 'react-router-dom';
+import styles from './Projects.module.css';
 import Message from '../layout/Message';
+import Container from '../layout/Container';
+import LinkButton from '../layout/LinkButton';
 
 export default function Projects() {
     const location = useLocation();
@@ -7,9 +10,15 @@ export default function Projects() {
     const type = location.state ? location.state.type : '';
 
     return (
-        <div>
+        <section className={styles.project}>
             <Message msg={message} type={type} />
-            <h1>iManager Projects</h1>
-        </div>
+            <div className={styles.titleContainer}>
+                <h2>Meus Projetos</h2>
+                <LinkButton to="/create-project">Novo Projeto</LinkButton>
+            </div>
+            <Container customClass="start">
+                <p>Projetos...</p>
+            </Container>
+        </section>
     );
 }

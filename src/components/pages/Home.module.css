@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 60px 20px;
 }
 
 .home > h1 {
@@ -34,6 +34,7 @@
 }
 
 .home svg {
+    margin-top: 50px;
     color: #ef8354;
     font-size: 380px;
 }

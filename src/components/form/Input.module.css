@@ -23,6 +23,7 @@
     font-size: 17px;
     width: 100%;
     background: #eee;
+    transition: all 0.2s ease-in-out;
 }
 
 .inputContainer input::placeholder {
@@ -38,4 +39,9 @@
 /* hide input number arrows Firefox */
 .inputContainer input[type='number'] {
     -moz-appearance: textfield;
+}
+
+.inputContainer input:hover,
+input:focus {
+    border-color: #ef8354;
 }

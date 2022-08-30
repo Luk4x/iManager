@@ -25,4 +25,9 @@
     background: #eee;
     cursor: pointer;
     margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.selectContainer select:hover {
+    border-color: #ef8354;
 }
