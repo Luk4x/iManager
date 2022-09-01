@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "formProjectName": "Projeto1",
-      "formProjectBudget": "5000",
+      "name": "Projeto1",
+      "budget": "2000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "formProjectName": "Projeto2",
-      "formProjectBudget": "2000",
+      "name": "Projeto2",
+      "budget": "3500",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -23,69 +23,26 @@
       "id": 2
     },
     {
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "formProjectBudget": "2500",
-      "formProjectName": "Projeto3",
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "formProjectName": "Projeto4",
-      "formProjectBudget": "25000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "formProjectName": "Projeto5",
-      "formProjectBudget": "24600",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "formProjectName": "Projeto6",
-      "formProjectBudget": "28000",
+      "name": "Projeto3",
+      "budget": "10000",
       "category": {
         "id": "3",
         "name": "Design"
       },
       "cost": 0,
       "services": [],
-      "id": 6
+      "id": 3
     },
     {
-      "formProjectName": "a",
-      "formProjectBudget": "254",
+      "name": "Projeto4",
+      "budget": "6000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
       "cost": 0,
       "services": [],
-      "id": 7
-    },
-    {
-      "formProjectName": "aw",
-      "formProjectBudget": "252",
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "formProjectName": "awsfd",
-      "formProjectBudget": "25253",
-      "cost": 0,
-      "services": [],
-      "id": 9
+      "id": 4
     }
   ],
   "categories": [

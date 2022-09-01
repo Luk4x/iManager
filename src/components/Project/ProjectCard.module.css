@@ -1,0 +1,98 @@
+.projectCard {
+    border: 1px solid #2d3142;
+    border-radius: 5px;
+    margin: 10px;
+    width: 270px;
+}
+
+.projectCard h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #ef8354;
+    background: #2d3142;
+    padding: 5px;
+    text-align: center;
+}
+
+.innerCard {
+    padding: 10px 10px 30px;
+    color: #4f5d75;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerCard span {
+    font-weight: 500;
+}
+
+.categoryText {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.categoryText span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: #bfc0c0;
+}
+
+.categoryText .infra {
+    background: #ffaebc;
+}
+
+.categoryText .desenvolvimento {
+    background: #a0e7e5;
+}
+
+.categoryText .design {
+    background: #b4f8c8;
+}
+
+.categoryText .planejamento {
+    background: #c6c8fb;
+}
+
+.projectNumber {
+    display: inline;
+    border-bottom: 3px solid #ef8354;
+    border-radius: 3px;
+}
+
+.innerCard svg {
+    font-size: 90px;
+    position: relative;
+    bottom: -20px;
+    color: #ef8354;
+}
+
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+}
+
+.footerCard a,
+.footerCard button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    color: #2d3142;
+    font-size: 16px;
+    cursor: pointer;
+    background: #bfc0c0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.footerCard a:hover,
+.footerCard button:hover {
+    background: #2d3142;
+    color: #ef8354;
+}
