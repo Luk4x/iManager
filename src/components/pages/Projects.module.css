@@ -13,3 +13,23 @@
     font-size: 40px;
     font-weight: 300;
 }
+
+.noProjects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.noProjects svg {
+    color: #ef8354;
+    font-size: 40px;
+}
+
+.noProjects h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #2d3142;
+}

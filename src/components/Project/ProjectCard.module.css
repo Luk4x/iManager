@@ -42,19 +42,19 @@
 }
 
 .categoryText .infra {
-    background: #ffaebc;
+    background: #fa93a4;
 }
 
 .categoryText .desenvolvimento {
-    background: #a0e7e5;
+    background: #83e8e4;
 }
 
 .categoryText .design {
-    background: #b4f8c8;
+    background: #8cf1aa;
 }
 
 .categoryText .planejamento {
-    background: #c6c8fb;
+    background: #a3a6f6;
 }
 
 .projectNumber {
@@ -67,7 +67,22 @@
     font-size: 90px;
     position: relative;
     bottom: -20px;
-    color: #ef8354;
+}
+
+.innerCard .infra svg {
+    color: #bc5d6d;
+}
+
+.innerCard .desenvolvimento svg {
+    color: #5aadaa;
+}
+
+.innerCard .design svg {
+    color: #51ab6c;
+}
+
+.innerCard .planejamento svg {
+    color: #5c5fb7;
 }
 
 .footerCard {
