@@ -5,6 +5,7 @@ import Projects from './components/pages/Projects';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import CreateProject from './components/pages/CreateProject';
+import Project from './components/pages/Project';
 
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
@@ -30,6 +31,9 @@ export default function App() {
                     </Route>
                     <Route path="/create-project">
                         <CreateProject />
+                    </Route>
+                    <Route path="/project/:id">
+                        <Project />
                     </Route>
                 </Container>
             </Switch>

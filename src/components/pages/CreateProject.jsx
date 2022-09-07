@@ -20,7 +20,7 @@ export default function CreateProject() {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                history.push('/projects', { message: `Projeto ${data.id} criado com sucesso!`, type: 'success' });
+                history.push('/projects', { message: `Projeto Nº ${data.id} criado com sucesso!`, type: 'success' });
             })
             .catch(err => console.log(err));
     }

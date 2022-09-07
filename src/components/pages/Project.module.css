@@ -1,0 +1,36 @@
+.projectDetails {
+    padding-top: 60px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titleContainer h2 {
+    font-weight: 500;
+    font-size: 40px;
+    background: #2d3142;
+    color: #ef8354;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.projectInfo p {
+    color: #4f5d75;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.projectInfo span {
+    font-weight: 500;
+}
+
+.projectDetails,
+.serviceFormContainer {
+    border-bottom: 1px solid #2d3142;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}

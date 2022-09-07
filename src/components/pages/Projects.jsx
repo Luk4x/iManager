@@ -13,8 +13,8 @@ import { HiOutlineEmojiSad } from 'react-icons/hi';
 
 export default function Projects() {
     const location = useLocation();
-    const [message, setMessage] = useState(location.state.message ?? '');
-    const [type, setType] = useState(location.state.type ?? '');
+    const [message, setMessage] = useState(location.state ? location.state.message : '');
+    const [type, setType] = useState(location.state ? location.state.type : '');
     const [loader, setLoader] = useState(true);
     const [projects, setProjects] = useState([]);
 
@@ -44,15 +44,15 @@ export default function Projects() {
         })
             .then(() => {
                 setProjects(projects.filter(project => project.id !== id));
-                setMessage(`Projeto ${id} removido com sucesso!`);
                 setType('success');
+                setMessage(`Projeto Nº ${id} removido com sucesso!`);
             })
             .catch(err => console.log(err));
     };
 
     return (
         <section className={styles.project}>
-            <Message msg={message} type={type} />
+            {message && <Message msg={message} type={type} />}
             <div className={styles.titleContainer}>
                 <h2>Meus Projetos</h2>
                 <LinkButton to="/create-project">Novo Projeto</LinkButton>

@@ -28,7 +28,7 @@ export default function ProjectCard({ id, name, budget, category, handleRemove }
                 </div>
             </div>
             <div className={styles.footerCard}>
-                <Link to="/">
+                <Link to={`/project/${id}`}>
                     <BsPencil />
                     Editar
                 </Link>
