@@ -1,5 +1,5 @@
 .projectDetails {
-    padding-top: 60px;
+    margin: 60px 20px 20px;
 }
 
 .titleContainer {
@@ -18,9 +18,20 @@
     border-radius: 5px;
 }
 
+.projectInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectInfo svg {
+    font-size: 100px;
+    color: #ef8354;
+}
+
 .projectInfo p {
     color: #4f5d75;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
@@ -28,9 +39,15 @@
     font-weight: 500;
 }
 
-.projectDetails,
-.serviceFormContainer {
+.serviceContainer {
     border-bottom: 1px solid #2d3142;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    border-top: 1px solid #2d3142;
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+.serviceTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
