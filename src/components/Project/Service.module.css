@@ -1,0 +1,41 @@
+.innerCard {
+    padding: 10px 10px 20px;
+    color: #4f5d75;
+    font-size: 16px;
+}
+
+.innerCardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerCardHeader p {
+    font-size: 18px;
+}
+
+.innerCardHeader svg {
+    font-size: 70px;
+    transform: rotateY(180deg);
+}
+
+.infra svg {
+    color: #bc5d6d;
+}
+
+.desenvolvimento svg {
+    color: #5aadaa;
+}
+
+.design svg {
+    color: #51ab6c;
+}
+
+.planejamento svg {
+    color: #5c5fb7;
+}
+
+.innerCard span {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 5px;
+}

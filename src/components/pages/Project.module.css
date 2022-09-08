@@ -51,3 +51,28 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.serviceListContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noServices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.noServices svg {
+    color: #ef8354;
+    font-size: 40px;
+}
+
+.noServices h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #2d3142;
+}

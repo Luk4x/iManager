@@ -3,7 +3,8 @@ import styles from './Project.module.css';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { VscProject } from 'react-icons/vsc';
-import { parse, v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
+import { HiOutlineEmojiSad } from 'react-icons/hi';
 
 import Container from '../layout/Container';
 import Loading from '../layout/Loading';
@@ -11,6 +12,7 @@ import SubmitButton from '../form/SubmitButton';
 import ProjectForm from '../Project/ProjectForm';
 import Message from '../layout/Message';
 import ServiceForm from '../Project/ServiceForm';
+import ServiceCard from '../Project/ServiceCard';
 
 export default function Project() {
     const { id } = useParams();
@@ -86,12 +88,15 @@ export default function Project() {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
+                    setShowServiceForm(false);
                     setType('success');
                     setMessage(`Serviço adicionado com sucesso!`);
                 })
                 .catch(err => console.error(err));
         }
     };
+
+    const removeService = id => {};
 
     return (
         <Container customClass="column">
@@ -132,17 +137,18 @@ export default function Project() {
                             <h2>Serviços: </h2>
                             <SubmitButton onClick={() => setShowServiceForm(!showServiceForm)}>{showServiceForm ? 'Fechar' : 'Novo Serviço'}</SubmitButton>
                         </div>
-                        <div className={styles.serviceListContainer}>
+                        <Container customClass="start">
                             {showServiceForm ? (
-                                <div className={styles.serviceList}>
-                                    <ServiceForm handleSubmit={createService} btnText="Adicionar Serviço" projectData={project} />
-                                </div>
+                                <ServiceForm handleSubmit={createService} btnText="Adicionar Serviço" projectData={project} />
+                            ) : project.services.length > 0 ? (
+                                project.services.map(service => <ServiceCard key={service.id} ProjectCategory={project.category.name} {...service} handleRemove={removeService} />)
                             ) : (
-                                <div className={styles.serviceList}>
-                                    <p>Não há serviços cadastrados!</p>
+                                <div className={styles.noServices}>
+                                    <HiOutlineEmojiSad />
+                                    <h3>Não há serviços cadastrados!</h3>
                                 </div>
                             )}
-                        </div>
+                        </Container>
                     </div>
                 </div>
             ) : (

@@ -1,5 +1,77 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Projeto2",
+      "budget": "11000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 3000,
+      "services": [
+        {
+          "name": "Contratar Desenvolvedor Front-end",
+          "cost": "3000",
+          "desc": "Responsável pelo desenvolvimento do layout da aplicação.",
+          "id": "6ad8283d-6066-4362-b416-e4af93aaeab4"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Projeto3",
+      "budget": "9500",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 3000,
+      "services": [
+        {
+          "name": "Contratar Designer",
+          "cost": "3000",
+          "desc": "Responsável pela construção do design da aplicação.",
+          "id": "f1780179-6a65-411f-a9f0-dd62740e26e5"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Projeto1",
+      "budget": "10000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 6000,
+      "services": [
+        {
+          "name": "Comprar Hospedagem",
+          "cost": "2000",
+          "desc": "Resposável pela hospedagem do servidor.",
+          "id": "92f03e60-2153-4357-a166-17062ec64581"
+        },
+        {
+          "name": "Contratar Analista de Sistemas",
+          "cost": "4000",
+          "desc": "Será reponsável pela administração do banco de dados.",
+          "id": "dbdc29cd-9581-4c0e-8cae-548450549a25"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Projeto5",
+      "budget": "12000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    }
+  ],
   "categories": [
     {
       "id": 1,
