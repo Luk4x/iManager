@@ -30,7 +30,7 @@ export default function ServiceCard({ id, name, cost, desc, ProjectCategory, han
                     <BsPencil />
                     Editar
                 </Link> */}
-                <button onClick={() => handleRemove(id)}>
+                <button onClick={() => handleRemove(id, cost)}>
                     <BsFillTrashFill />
                     Excluir
                 </button>

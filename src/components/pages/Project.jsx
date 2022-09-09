@@ -96,7 +96,30 @@ export default function Project() {
         }
     };
 
-    const removeService = id => {};
+    const removeService = (id, cost) => {
+        setMessage('');
+
+        const servicesUpdated = project.services.filter(service => service.id !== id);
+        const projectUpdated = project;
+
+        projectUpdated.services = servicesUpdated;
+        projectUpdated.cost -= parseFloat(cost);
+
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(projectUpdated)
+        })
+            .then(res => res.json())
+            .then(data => {
+                setProject(projectUpdated);
+                setType('success');
+                setMessage('Serviço removido com sucesso!');
+            })
+            .catch(err => console.error(err));
+    };
 
     return (
         <Container customClass="column">
