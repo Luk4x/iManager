@@ -16,7 +16,7 @@ export default function Navbar() {
                     <Link to="/projects">Projetos</Link>
                 </li>
                 <li>
-                    <Link to="/company">Empresa</Link>
+                    <Link to="/company">Sobre</Link>
                 </li>
                 <li>
                     <Link to="/contact">Contato</Link>

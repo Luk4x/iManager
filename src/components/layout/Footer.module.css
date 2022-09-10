@@ -18,7 +18,7 @@
 .socials svg {
     font-size: 25px;
     color: #bfc0c0;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out 0.2s;
 }
 
 .socials svg:hover {
@@ -39,4 +39,19 @@
 
 .footer p span {
     color: #ef8354;
+}
+
+.footer p span:nth-child(2) {
+    font-weight: 300;
+    color: #bfc0c0;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #ef8354;
+    font-weight: 500;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
 }

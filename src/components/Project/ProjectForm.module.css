@@ -1,3 +1,22 @@
+.formContainer {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.blurContainer {
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #bfc0c0, #eee);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
 .form {
     width: 100%;
     display: flex;
@@ -5,4 +24,6 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    position: relative;
+    z-index: 1;
 }

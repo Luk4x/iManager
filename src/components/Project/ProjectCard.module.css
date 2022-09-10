@@ -3,6 +3,7 @@
     border-radius: 5px;
     margin: 10px;
     width: 270px;
+    height: 100%;
 }
 
 .projectCard h3 {
@@ -20,6 +21,7 @@
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+    background: #eee;
 }
 
 .innerCard span {
@@ -90,6 +92,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px 10px 10px;
+    background: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .footerCard a,

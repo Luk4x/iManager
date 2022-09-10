@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { VscProject } from 'react-icons/vsc';
 import { v4 as uuidv4 } from 'uuid';
 import { HiOutlineEmojiSad } from 'react-icons/hi';
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
 import Container from '../layout/Container';
 import Loading from '../layout/Loading';
@@ -123,12 +124,15 @@ export default function Project() {
 
     return (
         <Container customClass="column">
-            {message && <Message msg={message} type={type} />}
+            <Message msg={message} type={type} />
             {project.name ? (
                 <div className={styles.projectDetails}>
                     <div className={styles.projectHeader}>
                         <div className={styles.titleContainer}>
-                            <h2>Projeto: {project.name}</h2>
+                            <h2>
+                                <span>{project.id}° Projeto:</span>
+                                <span>{project.name}</span>
+                            </h2>
                             <SubmitButton onClick={() => setShowProjectForm(!showProjectForm)}>{showProjectForm ? 'Fechar' : 'Editar Projeto'}</SubmitButton>
                         </div>
                         {showProjectForm ? (
@@ -156,6 +160,7 @@ export default function Project() {
                         )}
                     </div>
                     <div className={styles.serviceContainer}>
+                        <AiOutlineFundProjectionScreen />
                         <div className={styles.serviceTitleContainer}>
                             <h2>Serviços: </h2>
                             <SubmitButton onClick={() => setShowServiceForm(!showServiceForm)}>{showServiceForm ? 'Fechar' : 'Novo Serviço'}</SubmitButton>

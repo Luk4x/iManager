@@ -18,15 +18,26 @@
     border-radius: 5px;
 }
 
+.titleContainer h2 > span:nth-child(1) {
+    color: #4f5d75;
+    border-bottom: 1px solid #ef8354;
+}
+
+.titleContainer h2 > span:nth-child(2) {
+    border-bottom: 1px solid #4f5d75;
+    padding-left: 10px;
+}
+
 .projectInfo {
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
 .projectInfo svg {
-    font-size: 100px;
-    color: #ef8354;
+    font-size: 120px;
+    color: #2d3142;
 }
 
 .projectInfo p {
@@ -40,16 +51,32 @@
 }
 
 .serviceContainer {
-    border-bottom: 1px solid #2d3142;
-    border-top: 1px solid #2d3142;
+    border-top: 2px solid #2d3142;
     padding: 20px 0;
     margin: 30px 0;
+}
+
+.serviceContainer > svg {
+    position: absolute;
+    font-size: 150px;
+    color: #ef8354;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    z-index: -1;
 }
 
 .serviceTitleContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.serviceTitleContainer > h2 {
+    color: #2d3142;
+    font-weight: 500;
+    font-size: 35px;
 }
 
 .serviceListContainer {

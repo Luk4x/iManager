@@ -1,5 +1,13 @@
-.projectContainer {
+.secContainer {
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectContainer {
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,10 +20,26 @@
     font-weight: 300;
     font-size: 44px;
     color: #2d3142;
+    border-bottom: 5px solid #ef8354;
+    border-radius: 5px;
 }
 
 .projectContainer p {
     font-size: 22px;
     color: #4f5d75;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.image {
+    background-image: url('../../assets/createProjectImage.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98%;
+    width: 60%;
+    border: 2px solid #ef8354;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000004f;
+    margin-right: 20px;
 }

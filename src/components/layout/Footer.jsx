@@ -52,7 +52,10 @@ export default function Footer() {
                 </ul>
             </div>
             <p>
-                <span>iManager</span> &copy; 2022
+                <span>iManager</span> &copy; 2022 — <span>developed by</span>{' '}
+                <a href="https://github.com/Luk4x" target="_blank">
+                    Luk4x
+                </a>
             </p>
         </footer>
     );

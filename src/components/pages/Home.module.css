@@ -1,5 +1,11 @@
-.home {
+.sectionContainer {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +43,17 @@
     margin-top: 50px;
     color: #ef8354;
     font-size: 380px;
+}
+
+.image {
+    background-image: url('../../assets/homeImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98%;
+    width: 50%;
+    border: 2px solid #ef8354;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000004f;
+    margin-right: 20px;
 }

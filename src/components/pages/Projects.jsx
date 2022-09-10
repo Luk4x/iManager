@@ -10,6 +10,7 @@ import ProjectCard from '../Project/ProjectCard';
 import Loading from '../layout/Loading';
 
 import { HiOutlineEmojiSad } from 'react-icons/hi';
+import { MdDesignServices } from 'react-icons/md';
 
 export default function Projects() {
     const location = useLocation();
@@ -52,7 +53,8 @@ export default function Projects() {
 
     return (
         <section className={styles.project}>
-            {message && <Message msg={message} type={type} />}
+            <Message msg={message} type={type} />
+            {!loader && <MdDesignServices />}
             <div className={styles.titleContainer}>
                 <h2>Meus Projetos</h2>
                 <LinkButton to="/create-project">Novo Projeto</LinkButton>
