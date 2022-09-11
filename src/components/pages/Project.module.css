@@ -92,6 +92,14 @@
     color: #b71313;
 }
 
+.cut {
+    text-decoration: line-through 2px;
+}
+
+.noCut {
+    text-decoration: none;
+}
+
 .serviceContainer {
     border-top: 2px solid #2d3142;
     padding: 20px 0;

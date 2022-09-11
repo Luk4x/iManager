@@ -7,15 +7,8 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 2000,
-      "services": [
-        {
-          "name": "Contratar Designer",
-          "cost": "2000",
-          "desc": "Responsável pela construção do design da aplicação.",
-          "id": "d2bcbc45-b9b7-453d-95d8-ffdc88560023"
-        }
-      ],
+      "cost": -2500,
+      "services": [],
       "id": 1
     }
   ],

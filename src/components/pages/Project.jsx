@@ -146,9 +146,15 @@ export default function Project() {
                                     <p>
                                         Orçamento Total: <span>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.budget)}</span>
                                     </p>
-                                    <p>
-                                        Orçamento utilizado: <span>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.cost)}</span>
-                                    </p>
+                                    {parseInt(project.cost) !== parseInt(project.budget) ? (
+                                        <p>
+                                            Orçamento utilizado: <span className={styles.noCut}>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.cost)}</span>
+                                        </p>
+                                    ) : (
+                                        <p>
+                                            Orçamento utilizado: <span className={styles.cut}>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.cost)}</span>
+                                        </p>
+                                    )}
                                 </div>
                                 <VscProject />
                             </div>

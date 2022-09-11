@@ -23,9 +23,6 @@ export default function App() {
                     <Route path="/projects">
                         <Projects />
                     </Route>
-                    <Route path="/company">
-                        <Company />
-                    </Route>
                     <Route path="/contact">
                         <Contact />
                     </Route>
@@ -34,6 +31,9 @@ export default function App() {
                     </Route>
                     <Route path="/project/:id">
                         <Project />
+                    </Route>
+                    <Route path="/company">
+                        <Company />
                     </Route>
                 </Container>
             </Switch>
