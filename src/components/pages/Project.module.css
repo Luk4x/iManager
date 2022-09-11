@@ -35,19 +35,61 @@
     align-items: center;
 }
 
+.projectInfo > div {
+    background: #2d3142;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000004f;
+}
+
 .projectInfo svg {
-    font-size: 120px;
-    color: #2d3142;
+    font-size: 140px;
+    color: #4f5d75;
 }
 
 .projectInfo p {
-    color: #4f5d75;
+    color: #bfc0c0;
     font-size: 22px;
     margin-bottom: 5px;
+    text-align: center;
+    color: #bfc0c0;
+    font-weight: 500;
 }
 
 .projectInfo span {
-    font-weight: 500;
+    font-weight: 400;
+}
+
+.infra > span {
+    color: #bc5d6d;
+    border-bottom: 2px solid #bc5d6d;
+    border-radius: 2px;
+}
+
+.desenvolvimento > span {
+    color: #5aadaa;
+    border-bottom: 2px solid #5aadaa;
+    border-radius: 2px;
+}
+
+.design > span {
+    color: #51ab6c;
+    border-bottom: 2px solid #51ab6c;
+    border-radius: 2px;
+}
+
+.planejamento > span {
+    color: #5c5fb7;
+    border-bottom: 2px solid #5c5fb7;
+    border-radius: 2px;
+}
+
+.projectInfo p:nth-child(2) span {
+    color: #0c7a0c;
+}
+
+.projectInfo p:nth-child(3) span {
+    color: #b71313;
 }
 
 .serviceContainer {

@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Projeto1",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 2000,
+      "services": [
+        {
+          "name": "Contratar Designer",
+          "cost": "2000",
+          "desc": "Responsável pela construção do design da aplicação.",
+          "id": "d2bcbc45-b9b7-453d-95d8-ffdc88560023"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

@@ -32,6 +32,7 @@
 }
 
 .image {
+    background-color: #ef8354;
     background-image: url('../../assets/createProjectImage.jpeg');
     background-position: center;
     background-repeat: no-repeat;

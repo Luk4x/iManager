@@ -14,7 +14,7 @@ export default function ProjectCard({ id, name, budget, category, handleRemove }
                     <p>
                         <span>Orçamento:</span>
                         <br />
-                        &ensp;R${budget}
+                        <span className={styles.projectBudget}>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(budget)}</span>
                     </p>
                     <p className={styles.categoryText}>
                         <span className={styles[category.name.toLowerCase()]}></span> {category.name}

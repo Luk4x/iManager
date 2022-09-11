@@ -15,7 +15,7 @@ export default function ServiceCard({ id, name, cost, desc, ProjectCategory, han
                     <p>
                         <span>Custo:</span>
                         <br />
-                        R${cost}
+                        {new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(cost)}
                     </p>
                     <MdMiscellaneousServices />
                 </div>

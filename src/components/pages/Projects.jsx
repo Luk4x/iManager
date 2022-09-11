@@ -54,7 +54,7 @@ export default function Projects() {
     return (
         <section className={styles.project}>
             <Message msg={message} type={type} />
-            {!loader && <MdDesignServices />}
+            {!loader && projects.length > 0 && <MdDesignServices />}
             <div className={styles.titleContainer}>
                 <h2>Meus Projetos</h2>
                 <LinkButton to="/create-project">Novo Projeto</LinkButton>

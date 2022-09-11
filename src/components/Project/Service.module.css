@@ -12,6 +12,7 @@
 
 .innerCardHeader p {
     font-size: 18px;
+    color: #b71313;
 }
 
 .innerCardHeader svg {
@@ -39,4 +40,5 @@
     font-weight: 500;
     font-size: 20px;
     padding-left: 5px;
+    color: #4f5d75;
 }

@@ -29,6 +29,16 @@
     font-size: 20px;
 }
 
+.innerCard p:nth-child(1) > span:nth-child(1) {
+    padding-left: 5px;
+}
+
+span.projectBudget {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0c7a0c;
+}
+
 .categoryText {
     margin: 10px 0;
     display: flex;

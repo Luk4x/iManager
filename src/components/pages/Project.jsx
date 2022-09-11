@@ -136,23 +136,18 @@ export default function Project() {
                             <SubmitButton onClick={() => setShowProjectForm(!showProjectForm)}>{showProjectForm ? 'Fechar' : 'Editar Projeto'}</SubmitButton>
                         </div>
                         {showProjectForm ? (
-                            <div className={styles.projectInfo}>
-                                <ProjectForm handleSubmit={editPost} btnText="Concluir Edição" projectData={project} />
-                            </div>
+                            <ProjectForm handleSubmit={editPost} btnText="Concluir Edição" projectData={project} />
                         ) : (
                             <div className={styles.projectInfo}>
                                 <div>
-                                    <p>
-                                        <span>Categoria: </span>
-                                        {project.category.name}
+                                    <p className={styles[project.category.name.toLowerCase()]}>
+                                        Categoria: <span>{project.category.name}</span>
                                     </p>
                                     <p>
-                                        <span>Orçamento Total: </span>
-                                        R${project.budget}
+                                        Orçamento Total: <span>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.budget)}</span>
                                     </p>
                                     <p>
-                                        <span>Orçamento utilizado: </span>
-                                        R${project.cost}
+                                        Orçamento utilizado: <span>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.cost)}</span>
                                     </p>
                                 </div>
                                 <VscProject />
@@ -160,7 +155,7 @@ export default function Project() {
                         )}
                     </div>
                     <div className={styles.serviceContainer}>
-                        <AiOutlineFundProjectionScreen />
+                        {project.services.length > 0 && <AiOutlineFundProjectionScreen />}
                         <div className={styles.serviceTitleContainer}>
                             <h2>Serviços: </h2>
                             <SubmitButton onClick={() => setShowServiceForm(!showServiceForm)}>{showServiceForm ? 'Fechar' : 'Novo Serviço'}</SubmitButton>
