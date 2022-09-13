@@ -11,10 +11,10 @@
     font-weight: 500;
     color: #ef8354;
     background: #2d3142;
-    padding: 5px;
     text-align: center;
     overflow: auto;
     white-space: nowrap;
+    padding: 5px 0;
 }
 
 .innerCard {

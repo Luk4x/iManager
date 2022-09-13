@@ -9,7 +9,7 @@ import { MdMiscellaneousServices } from 'react-icons/md';
 export default function ServiceCard({ id, name, cost, desc, ProjectCategory, handleRemove, handleEdit }) {
     return (
         <div className={styles.projectCard}>
-            <h3>{name}</h3>
+            <h3>&ensp;{name}&ensp;</h3>
             <div className={styles2.innerCard}>
                 <div className={`${styles2.innerCardHeader} ${styles2[ProjectCategory.toLowerCase()]}`}>
                     <p>

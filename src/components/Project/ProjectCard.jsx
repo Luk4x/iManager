@@ -8,7 +8,7 @@ import { VscPreview } from 'react-icons/vsc';
 export default function ProjectCard({ id, name, budget, category, handleRemove }) {
     return (
         <div className={styles.projectCard}>
-            <h3>{name}</h3>
+            <h3>&ensp;{name}&ensp;</h3>
             <div className={styles.innerCard}>
                 <div>
                     <p>

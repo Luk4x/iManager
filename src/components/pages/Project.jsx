@@ -69,7 +69,8 @@ export default function Project() {
 
     const createService = project => {
         setMessage('');
-
+        console.log(project);
+        
         const lastService = project.services[project.services.length - 1];
         lastService.id = uuidv4();
 
@@ -125,12 +126,14 @@ export default function Project() {
     };
 
     const handleEditService = id => {
-        console.log(id);
         setServiceId(id);
         setShowServiceEditForm(!showServiceEditForm);
     };
 
-    const editService = () => {};
+    const editService = (project, service) => {
+        setMessage('');
+        console.log(service);
+    };
 
     return (
         <Container customClass="column">
