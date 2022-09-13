@@ -20,6 +20,8 @@ export default function Project() {
     const [project, setProject] = useState({});
     const [showProjectForm, setShowProjectForm] = useState(false);
     const [showServiceForm, setShowServiceForm] = useState(false);
+    const [showServiceEditForm, setShowServiceEditForm] = useState(false);
+    const [serviceId, setServiceId] = useState();
     const [message, setMessage] = useState();
     const [type, setType] = useState();
 
@@ -122,6 +124,14 @@ export default function Project() {
             .catch(err => console.error(err));
     };
 
+    const handleEditService = id => {
+        console.log(id);
+        setServiceId(id);
+        setShowServiceEditForm(!showServiceEditForm);
+    };
+
+    const editService = () => {};
+
     return (
         <Container customClass="column">
             <Message msg={message} type={type} />
@@ -170,7 +180,11 @@ export default function Project() {
                             {showServiceForm ? (
                                 <ServiceForm handleSubmit={createService} btnText="Adicionar Serviço" projectData={project} />
                             ) : project.services.length > 0 ? (
-                                project.services.map(service => <ServiceCard key={service.id} ProjectCategory={project.category.name} {...service} handleRemove={removeService} />)
+                                showServiceEditForm ? (
+                                    <ServiceForm handleSubmit={editService} btnText="Concluir Edição" projectData={project} id={serviceId} />
+                                ) : (
+                                    project.services.map(service => <ServiceCard key={service.id} ProjectCategory={project.category.name} {...service} handleRemove={removeService} handleEdit={handleEditService} />)
+                                )
                             ) : (
                                 <div className={styles.noServices}>
                                     <HiOutlineEmojiSad />

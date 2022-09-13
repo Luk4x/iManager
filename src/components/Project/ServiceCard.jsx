@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 import { MdMiscellaneousServices } from 'react-icons/md';
 
-export default function ServiceCard({ id, name, cost, desc, ProjectCategory, handleRemove }) {
+export default function ServiceCard({ id, name, cost, desc, ProjectCategory, handleRemove, handleEdit }) {
     return (
         <div className={styles.projectCard}>
             <h3>{name}</h3>
@@ -26,10 +26,10 @@ export default function ServiceCard({ id, name, cost, desc, ProjectCategory, han
                 </p>
             </div>
             <div className={styles.footerCard}>
-                {/* <Link to={`/service/${id}`} disable>
+                <button onClick={() => handleEdit(id)}>
                     <BsPencil />
                     Editar
-                </Link> */}
+                </button>
                 <button onClick={() => handleRemove(id, cost)}>
                     <BsFillTrashFill />
                     Excluir
