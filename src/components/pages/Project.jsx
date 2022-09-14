@@ -69,8 +69,7 @@ export default function Project() {
 
     const createService = project => {
         setMessage('');
-        console.log(project);
-        
+
         const lastService = project.services[project.services.length - 1];
         lastService.id = uuidv4();
 
@@ -132,7 +131,40 @@ export default function Project() {
 
     const editService = (project, service) => {
         setMessage('');
-        console.log(service);
+
+        project.services.map(mapService => {
+            if (mapService.id === service.id) {
+                const projectCost = parseFloat(project.cost) - parseFloat(mapService.cost);
+
+                if (parseFloat(projectCost) + parseFloat(service.cost) > parseFloat(project.budget)) {
+                    setType('error');
+                    setMessage(`O orçamento do Projeto Nº ${project.id} foi ultrapassado, verifique o valor do serviço.`);
+                    return;
+                } else {
+                    project.cost = parseFloat(project.cost) - parseFloat(mapService.cost) + parseFloat(service.cost);
+
+                    mapService.name = service.name;
+                    mapService.cost = parseFloat(service.cost);
+                    mapService.desc = service.desc;
+
+                    fetch(`http://localhost:5000/projects/${project.id}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(project)
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data);
+                            setShowServiceEditForm(false);
+                            setType('success');
+                            setMessage(`Serviço atualizado com sucesso!`);
+                        })
+                        .catch(err => console.error(err));
+                }
+            }
+        });
     };
 
     return (
@@ -159,7 +191,7 @@ export default function Project() {
                                     <p>
                                         Orçamento Total: <span>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.budget)}</span>
                                     </p>
-                                    {parseInt(project.cost) !== parseInt(project.budget) ? (
+                                    {parseFloat(project.cost) !== parseFloat(project.budget) ? (
                                         <p>
                                             Orçamento utilizado: <span className={styles.noCut}>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(project.cost)}</span>
                                         </p>
