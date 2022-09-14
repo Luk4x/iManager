@@ -24,6 +24,8 @@ export default function ProjectForm({ btnText, handleSubmit, projectData }) {
 
     const submit = e => {
         e.preventDefault();
+        if (!project.category) project.category = { id: 1, name: 'Infra' };
+
         handleSubmit(project);
     };
 
@@ -44,8 +46,8 @@ export default function ProjectForm({ btnText, handleSubmit, projectData }) {
     return (
         <div className={styles.formContainer}>
             <form onSubmit={submit} className={styles.form}>
-                <Input type="text" name="name" placeholder="Insira o nome do Projeto" labelContent="Nome do Projeto" onChange={handleInput} value={project.name ? project.name : ''} />
-                <Input type="number" name="budget" placeholder="Insira o orçamento total" labelContent="Orçamento do Projeto" onChange={handleInput} value={project.budget ? project.budget : ''} />
+                <Input type="text" name="name" placeholder="Insira o nome do Projeto" labelContent="Nome do Projeto" onChange={handleInput} value={project.name ? project.name : ''} required />
+                <Input type="number" name="budget" placeholder="Insira o orçamento total" labelContent="Orçamento do Projeto" onChange={handleInput} value={project.budget ? project.budget : ''} required />
                 <Select name="category" labelContent="Selecione uma categoria" options={categories} onChange={handleCategory} value={project.category ? project.category.id : ''} />
                 <SubmitButton type="submit">{btnText}</SubmitButton>
             </form>

@@ -7,11 +7,11 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 18000,
+      "cost": 18100,
       "services": [
         {
           "name": "Contratar Dev Back-End",
-          "cost": 4400,
+          "cost": 4500,
           "desc": "Responsável pela manutenção da comunicação entre o cliente e o servidor.",
           "id": "25560b69-901c-4677-90db-786fd98c83a9"
         },
@@ -35,35 +35,6 @@
         }
       ],
       "id": 1
-    },
-    {
-      "name": "ao35ytv8q2 9y 25t3u 90thy7893w ",
-      "budget": "6463",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Projeto2",
-      "budget": "70600",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 5000,
-      "services": [
-        {
-          "name": "Contratar Dev Front-End",
-          "cost": "5000",
-          "desc": "Responsável pelo desenvolvimento do layout da aplicação.",
-          "id": "f713c2d2-f31b-446a-8e05-f48c5ea569a6"
-        }
-      ],
-      "id": 3
     }
   ],
   "categories": [
