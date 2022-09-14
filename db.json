@@ -1,63 +1,69 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "name": "Projeto1",
+      "budget": "60000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 18000,
+      "services": [
         {
-            "name": "Projeto1",
-            "budget": "60000",
-            "category": {
-                "id": "2",
-                "name": "Desenvolvimento"
-            },
-            "cost": 60000,
-            "services": [
-                {
-                    "name": "Contratar Dev Front-End",
-                    "cost": 53600,
-                    "desc": "Responsável pelo desenvolvimento do layout da aplicação.",
-                    "id": "73e2b197-f0b7-4913-8fc4-dc4d018fea17"
-                },
-                {
-                    "name": "Contratar Dev Back-End",
-                    "cost": 4400,
-                    "desc": "Responsável pela manutenção da comunicação entre o cliente e o servidor.",
-                    "id": "25560b69-901c-4677-90db-786fd98c83a9"
-                },
-                {
-                    "name": "Contratar Dev Full-Stack",
-                    "cost": 2000,
-                    "desc": "Responsável por auxiliar os profissionais Front-End e Back-End.",
-                    "id": "0b99c176-1a02-40a3-a0c1-dafcc02b8fb7"
-                }
-            ],
-            "id": 1
+          "name": "Contratar Dev Back-End",
+          "cost": 4400,
+          "desc": "Responsável pela manutenção da comunicação entre o cliente e o servidor.",
+          "id": "25560b69-901c-4677-90db-786fd98c83a9"
         },
         {
-            "name": "ao35ytv8q2 9y 25t3u 90thy7893w ",
-            "budget": "6463",
-            "category": {
-                "id": "1",
-                "name": "Infra"
-            },
-            "cost": 0,
-            "services": [],
-            "id": 2
+          "name": "Contratar Dev Full-Stack Pleno",
+          "cost": 5000,
+          "desc": "Responsável por auxiliar os profissionais Front-End e Back-End.",
+          "id": "0b99c176-1a02-40a3-a0c1-dafcc02b8fb7"
+        },
+        {
+          "name": "Contratar Dev Front-End",
+          "cost": 4600,
+          "desc": "Responsável pelo desenvolvimento do layout da aplicação.",
+          "id": "dea206b3-409d-4b3f-9493-4bc2d27466a2"
+        },
+        {
+          "name": "Contratar Designer",
+          "cost": "4000",
+          "desc": "Responsável pela construção do design da aplicação.",
+          "id": "11fe4b08-b316-4f45-98f5-573e4d56f438"
         }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infra"
-        },
-        {
-            "id": 2,
-            "name": "Desenvolvimento"
-        },
-        {
-            "id": 3,
-            "name": "Design"
-        },
-        {
-            "id": 4,
-            "name": "Planejamento"
-        }
-    ]
+      ],
+      "id": 1
+    },
+    {
+      "name": "ao35ytv8q2 9y 25t3u 90thy7893w ",
+      "budget": "6463",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
 }

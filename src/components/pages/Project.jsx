@@ -167,6 +167,13 @@ export default function Project() {
         });
     };
 
+    const serviceFormButton = () => {
+        if (showServiceForm || showServiceEditForm) {
+            setShowServiceEditForm(false);
+            setShowServiceForm(false);
+        } else setShowServiceForm(!showServiceForm);
+    };
+
     return (
         <Container customClass="column">
             <Message msg={message} type={type} />
@@ -209,7 +216,7 @@ export default function Project() {
                         {project.services.length > 0 && <AiOutlineFundProjectionScreen />}
                         <div className={styles.serviceTitleContainer}>
                             <h2>Serviços: </h2>
-                            <SubmitButton onClick={() => setShowServiceForm(!showServiceForm)}>{showServiceForm ? 'Fechar' : 'Novo Serviço'}</SubmitButton>
+                            <SubmitButton onClick={serviceFormButton}>{showServiceForm || showServiceEditForm ? 'Fechar' : 'Novo Serviço'}</SubmitButton>
                         </div>
                         <Container customClass="start">
                             {showServiceForm ? (
