@@ -20,7 +20,7 @@
     font-weight: 300;
     font-size: 44px;
     color: #2d3142;
-    border-bottom: 5px solid #ef8354;
+    border-bottom: 5px solid #b3679b;
     border-radius: 5px;
 }
 
@@ -32,14 +32,14 @@
 }
 
 .image {
-    background-color: #ef8354;
+    background-color: #b3679b;
     background-image: url('../../assets/createProjectImage.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 98%;
     width: 60%;
-    border: 2px solid #ef8354;
+    border: 2px solid #b3679b;
     border-radius: 5px;
     box-shadow: 0 0 10px #0000004f;
     margin-right: 20px;

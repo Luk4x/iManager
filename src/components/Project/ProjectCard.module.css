@@ -9,7 +9,7 @@
 .projectCard h3 {
     font-size: 26px;
     font-weight: 500;
-    color: #ef8354;
+    color: #b3679b;
     background: #2d3142;
     text-align: center;
     overflow: auto;
@@ -74,7 +74,7 @@ span.projectBudget {
 
 .projectNumber {
     display: inline;
-    border-bottom: 3px solid #ef8354;
+    border-bottom: 3px solid #b3679b;
     border-radius: 3px;
 }
 
@@ -127,5 +127,5 @@ span.projectBudget {
 .footerCard a:hover,
 .footerCard button:hover {
     background: #2d3142;
-    color: #ef8354;
+    color: #b3679b;
 }

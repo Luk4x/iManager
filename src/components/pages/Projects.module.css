@@ -6,7 +6,7 @@
 .project > svg {
     position: absolute;
     font-size: 250px;
-    color: #ef8354;
+    color: #b3679b;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -24,7 +24,7 @@
 .titleContainer > h2 {
     font-size: 40px;
     font-weight: 300;
-    border-bottom: 5px solid #ef8354;
+    border-bottom: 5px solid #b3679b;
     border-radius: 5px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .noProjects svg {
-    color: #ef8354;
+    color: #b3679b;
     font-size: 40px;
 }
 

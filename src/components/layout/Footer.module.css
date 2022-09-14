@@ -22,7 +22,7 @@
 }
 
 .socials svg:hover {
-    color: #ef8354;
+    color: #b3679b;
 }
 
 .socials button {
@@ -38,7 +38,7 @@
 }
 
 .footer p span {
-    color: #ef8354;
+    color: #b3679b;
 }
 
 .footer p span:nth-child(2) {
@@ -48,7 +48,7 @@
 
 .footer p a {
     text-decoration: none;
-    color: #ef8354;
+    color: #b3679b;
     font-weight: 500;
 }
 

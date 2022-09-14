@@ -29,7 +29,7 @@
 }
 
 .home > h1 > span > span {
-    color: #ef8354;
+    color: #b3679b;
     font-weight: 300;
 }
 
@@ -41,19 +41,19 @@
 
 .home svg {
     margin-top: 50px;
-    color: #ef8354;
+    color: #b3679b;
     font-size: 380px;
 }
 
 .image {
-    background-color: #ef8354;
+    background-color: #b3679b;
     background-image: url('../../assets/homeImage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 98%;
     width: 50%;
-    border: 2px solid #ef8354;
+    border: 2px solid #b3679b;
     border-radius: 5px;
     box-shadow: 0 0 10px #0000004f;
     margin-right: 20px;

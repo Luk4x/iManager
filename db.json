@@ -46,6 +46,24 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Projeto2",
+      "budget": "70600",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 5000,
+      "services": [
+        {
+          "name": "Contratar Dev Front-End",
+          "cost": "5000",
+          "desc": "Responsável pelo desenvolvimento do layout da aplicação.",
+          "id": "f713c2d2-f31b-446a-8e05-f48c5ea569a6"
+        }
+      ],
+      "id": 3
     }
   ],
   "categories": [

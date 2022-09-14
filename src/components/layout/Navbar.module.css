@@ -2,7 +2,7 @@
     position: absolute;
     top: 15px;
     left: 30px;
-    color: #ef8354;
+    color: #b3679b;
     font-size: 70px;
     border: 4px solid #4f5d75;
     border-radius: 50%;
@@ -37,7 +37,7 @@
 }
 
 .list li a:hover {
-    color: #ef8354;
+    color: #b3679b;
 }
 
 @media screen and (max-width: 500px) {
