@@ -1,11 +1,13 @@
 .iconLogo {
     position: absolute;
+    z-index: 2;
     top: 15px;
     left: 30px;
     color: #b3679b;
     font-size: 70px;
     border: 4px solid #4f5d75;
     border-radius: 50%;
+    box-shadow: 0 0 10px #b3679b;
 }
 
 .navbar {
@@ -26,6 +28,8 @@
     border-bottom: 1px solid #bfc0c0;
     margin: 0 auto;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
 }
 
 .list li a {
@@ -34,6 +38,8 @@
     font-size: 25px;
     font-weight: 300;
     transition: all ease-in-out 0.2s;
+    position: relative;
+    z-index: 2;
 }
 
 .list li a:hover {
