@@ -36,8 +36,7 @@
     transition: all ease-in-out 0.2s;
 }
 
-.list li a:hover,
-.list li .activeLink {
+.list li a:hover {
     color: #b3679b;
     font-weight: 400;
 }

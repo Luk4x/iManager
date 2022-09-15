@@ -7,7 +7,7 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 18100,
+      "cost": 23100,
       "services": [
         {
           "name": "Contratar Dev Back-End",
@@ -32,9 +32,26 @@
           "cost": "4000",
           "desc": "Responsável pela construção do design da aplicação.",
           "id": "11fe4b08-b316-4f45-98f5-573e4d56f438"
+        },
+        {
+          "name": "Contratar Analista de Sistemas",
+          "cost": "5000",
+          "desc": "Será reponsável pela administração do banco de dados.",
+          "id": "2557ef1f-a088-46e8-8950-0c1386dc2f54"
         }
       ],
       "id": 1
+    },
+    {
+      "name": "4634",
+      "budget": "6436",
+      "category": {
+        "id": 1,
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
