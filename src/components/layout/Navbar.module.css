@@ -36,8 +36,10 @@
     transition: all ease-in-out 0.2s;
 }
 
-.list li a:hover {
+.list li a:hover,
+.list li .activeLink {
     color: #b3679b;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 500px) {
