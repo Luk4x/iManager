@@ -1,9 +1,5 @@
 .section {
-    width: 100%;
-}
-
-.width100Vw {
-    width: 100vw;
+    min-width: 100vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -23,6 +19,7 @@
     align-items: center;
     gap: 40px;
     filter: brightness(75%);
+    position: relative;
     top: -105px;
     padding: 20px;
 }
@@ -53,7 +50,8 @@
 }
 
 .colorHighlight {
-    padding: 90px 20px;
+    padding: 80px 20px;
+    position: relative;
     top: -105px;
     background: #b3679b;
 }
@@ -71,10 +69,46 @@
 .colorHighlight h3 {
     font-size: 50px;
     font-weight: 500;
-    width: 480px;
+    max-width: 480px;
 }
 
 .colorHighlight p {
     font-size: 20px;
-    width: 600px;
+    max-width: 600px;
+}
+
+.simplicity {
+    position: relative;
+    top: -52.5px;
+    padding: 50px 20px;
+}
+
+.simplicity > div {
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #bfc0c0;
+    transition: all 0.5s 0.3s ease-in-out;
+}
+
+.simplicity h3 {
+    font-size: 50px;
+    font-weight: 500;
+    max-width: 760px;
+    color: #2d3142;
+    margin-bottom: 20px;
+}
+
+.simplicity p {
+    max-width: 680px;
+    font-size: 20px;
+    color: #4f5d75;
+}
+
+.simplicity img {
+    width: 42%;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #0000004f;
 }
