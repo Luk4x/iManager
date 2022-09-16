@@ -1,29 +1,31 @@
 import styles from './Company.module.css';
-import { BiDownArrow } from 'react-icons/bi';
 
 import SubmitButton from '../form/SubmitButton';
+
+import { BiDownArrow } from 'react-icons/bi';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Company() {
     return (
         <section className={styles.section}>
-            <div className={`${styles.width100Vw} ${styles.headerImage}`}>
+            <article className={`${styles.width100Vw} ${styles.headerImage}`}>
                 <h2>Agente respira o novo</h2>
                 <a href="#colorHighlight">
                     <SubmitButton>
                         <BiDownArrow />
                     </SubmitButton>
                 </a>
-            </div>
-            <div id="colorHighlight" className={`${styles.width100Vw} ${styles.colorHighlight}`}>
-                <div>
+            </article>
+            <article id="colorHighlight" className={`${styles.width100Vw} ${styles.colorHighlight}`}>
+                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
                     <h3>Nascemos para fazer diferente</h3>
                     <p>
                         A iManager está aqui para fazer aquilo que ninguém conseguiu...
                         <br />
                         Para reunir em um Web App tudo que faz diferença na gestão da sua empresa.
                     </p>
-                </div>
-            </div>
+                </ScrollAnimation>
+            </article>
         </section>
     );
 }
