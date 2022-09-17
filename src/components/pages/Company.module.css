@@ -63,7 +63,7 @@
     align-items: center;
     margin: 0 auto;
     color: #bfc0c0;
-    transition: all 0.5s 0.3s ease-in-out;
+    transition: all 0.6s 0.3s ease-in-out;
 }
 
 .colorHighlight h3 {
@@ -90,7 +90,7 @@
     align-items: center;
     margin: 0 auto;
     color: #bfc0c0;
-    transition: all 0.5s 0.3s ease-in-out;
+    transition: all 0.6s 0.4s ease-in-out;
 }
 
 .simplicity h3 {
@@ -109,6 +109,100 @@
 
 .simplicity img {
     width: 42%;
-    border-radius: 5%;
-    box-shadow: 0 0 10px #0000004f;
+    border-radius: 5px;
+    clip-path: polygon(0 10%, 100% 0, 100% 50%, 100% 100%, 100% 90%, 0 100%, 0 50%, 0 0);
+}
+
+.simplicityImageDown {
+    background-color: #b3679b;
+    background-image: url('../../assets/companyImage3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    filter: brightness(75%);
+}
+
+.simplicityImageDown svg {
+    font-size: 130px;
+    background: #2d3142;
+    border-radius: 50%;
+    color: #b3679b;
+    padding: 20px;
+    box-shadow: 0 0 10px #b3679b;
+}
+
+.simplicityImageDown p {
+    font-size: 35px;
+    color: #eee;
+    text-shadow: 0 0 2px #0000004f;
+}
+
+.services {
+    padding: 100px 20px;
+}
+
+.services > div {
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    color: #bfc0c0;
+    transition: all 0.6s 0.4s ease-in-out;
+}
+
+.services h3 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #2d3142;
+    margin-bottom: 15px;
+}
+
+.services h3 span {
+    border-bottom: 2px solid #b3679b;
+}
+
+.services p {
+    font-size: 21.5px;
+    color: #4f5d75;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.services p svg {
+    font-size: 30px;
+    color: #b3679b;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    color: #4f5d75;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.services li svg {
+    color: #b3679b;
+    font-size: 30px;
+}
+
+.services img {
+    height: 650px;
+    border-radius: 5px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
