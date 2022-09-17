@@ -5,8 +5,8 @@ import CompanyImage2 from '../../assets/companyImage2.jpg';
 import CompanyImage4 from '../../assets/companyImage4.jpg';
 
 import { BiDownArrow } from 'react-icons/bi';
-import { MdMonitor, MdAccountCircle, MdLock, MdAirplaneTicket, MdNetworkCell } from 'react-icons/md';
-import { SiPlatzi } from 'react-icons/si';
+import { MdMonitor, MdAccountCircle, MdLock, MdAirplaneTicket, MdNetworkCell, MdOutlineSecurity } from 'react-icons/md';
+import { SiPlatzi, SiFastapi, SiPowerbi } from 'react-icons/si';
 import { CgMathPlus } from 'react-icons/cg';
 import { RiShoppingBagFill } from 'react-icons/ri';
 import { BsCreditCard2FrontFill, BsCheckLg } from 'react-icons/bs';
@@ -46,7 +46,7 @@ export default function Company() {
                 <MdMonitor />
                 <p>Mais que um gerenciador, um Web App que simplifica a sua empresa.</p>
             </div>
-            <article id="now" className={styles.services}>
+            <article className={styles.services}>
                 <ScrollAnimation animateIn="fadeIn" animateOnce="true">
                     <img src={CompanyImage4} alt="woman accountant working" />
                     <div>
@@ -82,6 +82,27 @@ export default function Company() {
                                 <CgMathPlus /> E muuuuuito mais!
                             </li>
                         </ul>
+                    </div>
+                </ScrollAnimation>
+            </article>
+            <article id="now" className={styles.cards}>
+                <h3>
+                    O <span>iManager</span> tem tudo que você precisa para gerir sua empresa.
+                </h3>
+                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                    <div className={styles.cardList}>
+                        <div>
+                            <MdOutlineSecurity />
+                            <p>Segurança</p>
+                        </div>
+                        <div>
+                            <SiFastapi />
+                            <p>Agilidade</p>
+                        </div>
+                        <div>
+                            <SiPowerbi />
+                            <p>Eficiência</p>
+                        </div>
                     </div>
                 </ScrollAnimation>
             </article>
