@@ -24,7 +24,7 @@ export default function Company() {
                 </a>
             </article>
             <article id="colorHighlight" className={styles.colorHighlight}>
-                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <h3>Nascemos para fazer diferente</h3>
                     <p>
                         A iManager está aqui para fazer aquilo que ninguém conseguiu...
@@ -34,7 +34,7 @@ export default function Company() {
                 </ScrollAnimation>
             </article>
             <article className={styles.simplicity}>
-                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <div>
                         <h3>Criamos o que simplifica a gestão das empresas</h3>
                         <p>Simplificar é tirar as burocracias da frente e conectar as soluções que a sua empresa precisa em um só lugar.</p>
@@ -47,7 +47,7 @@ export default function Company() {
                 <p>Mais que um gerenciador, um Web App que simplifica a sua empresa.</p>
             </div>
             <article className={styles.services}>
-                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <img src={CompanyImage4} alt="woman accountant working" />
                     <div>
                         <h3>
@@ -89,7 +89,7 @@ export default function Company() {
                 <h3>
                     O <span>iManager</span> tem tudo que você precisa para gerir sua empresa.
                 </h3>
-                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <div className={styles.cardList}>
                         <div>
                             <MdOutlineSecurity />
@@ -106,7 +106,7 @@ export default function Company() {
                     </div>
                 </ScrollAnimation>
             </article>
-            <article id="now" className={styles.gettingBetter}>
+            <article className={styles.gettingBetter}>
                 <h3>Crescendo cada vez mais</h3>
                 <p>Quem é da iManager pode contar com soluções completas para todos os momentos.</p>
                 <ul>
@@ -129,6 +129,25 @@ export default function Company() {
                         <span>iManager</span> Shop
                     </li>
                 </ul>
+            </article>
+            <article id="now" className={styles.evolution}>
+                <h3>Números da nossa evolução</h3>
+                <div className={styles.evolutionCardsList}>
+                    <div>
+                        <h4>+ de 20 Milhões</h4>
+                        <p>de empresas simplificando a gestão, um número que só cresce a cada dia.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            + de <br />4 mil
+                        </h4>
+                        <p>colaboradores fazem parte da iManager.</p>
+                    </div>
+                    <div>
+                        <h4>99%</h4>
+                        <p>de presença nos municípios brasileiros.</p>
+                    </div>
+                </div>
             </article>
         </section>
     );
