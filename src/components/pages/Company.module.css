@@ -269,7 +269,6 @@
 
 .gettingBetter {
     padding: 100px 20px;
-    max-width: 1520px;
     margin: 0 auto;
     color: #4f5d75;
     text-align: center;
@@ -361,4 +360,47 @@
     color: #b3679b;
     text-shadow: 0 0 10px #0000004f;
     filter: brightness(110%);
+}
+
+.trajectory {
+    padding: 100px 20px;
+    text-align: center;
+    color: #bfc0c0;
+    background: #2d3142;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.trajectory h3 {
+    color: #4f5d75;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.trajectory p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.trajectory .carouselRoot {
+    width: 100%;
+    color: #b3679b;
+}
+
+.trajectory .carouselRoot h4 {
+    font-size: 80px;
+    font-weight: 500;
+    border-bottom: 2px solid #4f5d75;
+    max-height: 90px;
+}
+
+.trajectory .carouselRoot p {
+    color: #bfc0c0;
+    margin-top: 20px;
+    height: 110px;
 }
