@@ -244,7 +244,7 @@
     width: 350px;
     height: 400px;
     background: #4f5d75;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px #b3679b;
     display: flex;
     flex-direction: column;
@@ -264,4 +264,46 @@
     padding: 10px;
     border-radius: 5px;
     background: #2d3142;
+}
+
+.gettingBetter {
+    padding: 100px 20px;
+    max-width: 1520px;
+    margin: 0 auto;
+    color: #4f5d75;
+    text-align: center;
+}
+
+.gettingBetter h3 {
+    color: #2d3142;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.gettingBetter p {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.gettingBetter ul {
+    list-style-type: none;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 35px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 2px solid #b3679b;
+    padding: 25px 10px;
+    border-radius: 5px;
+}
+
+.gettingBetter ul span {
+    font-weight: 500;
+    font-size: 37px;
+    color: #b3679b;
 }

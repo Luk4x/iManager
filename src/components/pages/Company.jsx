@@ -85,7 +85,7 @@ export default function Company() {
                     </div>
                 </ScrollAnimation>
             </article>
-            <article id="now" className={styles.cards}>
+            <article className={styles.cards}>
                 <h3>
                     O <span>iManager</span> tem tudo que você precisa para gerir sua empresa.
                 </h3>
@@ -106,9 +106,33 @@ export default function Company() {
                     </div>
                 </ScrollAnimation>
             </article>
+            <article id="now" className={styles.gettingBetter}>
+                <h3>Crescendo cada vez mais</h3>
+                <p>Quem é da iManager pode contar com soluções completas para todos os momentos.</p>
+                <ul>
+                    <li>
+                        <span>iManager</span> App
+                    </li>
+                    <li>
+                        <span>iManager</span> Seguros
+                    </li>
+                    <li>
+                        <span>iManager</span> Plus
+                    </li>
+                    <li>
+                        <span>iManager</span> Cel
+                    </li>
+                    <li>
+                        <span>iManager</span> Empresas
+                    </li>
+                    <li>
+                        <span>iManager</span> Shop
+                    </li>
+                </ul>
+            </article>
         </section>
     );
 }
 
 /* <p>O iManager é um gerenciador de custo baseado na Web que visa auxiliar empresas em sua gestão de projetos.</p>
-<p>Nós da iManager percebemos uma dificuldade das empresas e estamos aqui trazendo a solução que ninguém trouxe: Reunimos em uma Aplicação Web tudo o que a sua empresa precisa para ter uma gestão simples, rápida e prática.</p> */
+<p>Nós da iManager percebemos uma dificuldade das empresas e estamos aqui trazendo a solução que ninguém trouxe: Reunimos em uma Aplicação Web tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p> */
