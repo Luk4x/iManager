@@ -65,7 +65,6 @@
     align-items: center;
     margin: 0 auto;
     color: #bfc0c0;
-    transition: all 0.6s 0.3s ease-in-out;
 }
 
 .colorHighlight h3 {
@@ -83,34 +82,32 @@
     position: relative;
     top: -52.5px;
     padding: 50px 20px;
-}
-
-.simplicity > div {
     max-width: 1520px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
     margin: 0 auto;
-    color: #bfc0c0;
-    transition: all 0.6s 0.4s ease-in-out;
+}
+
+.simplicity div:nth-child(1) {
+    max-width: 700px;
 }
 
 .simplicity h3 {
     font-size: 50px;
     font-weight: 500;
-    max-width: 760px;
     color: #2d3142;
     margin-bottom: 20px;
 }
 
 .simplicity p {
-    max-width: 680px;
     font-size: 20px;
     color: #4f5d75;
 }
 
 .simplicity img {
-    width: 42%;
+    width: 100%;
     border-radius: 5px;
     clip-path: polygon(0 10%, 100% 0, 100% 50%, 100% 100%, 100% 90%, 0 100%, 0 50%, 0 0);
 }
@@ -148,16 +145,11 @@
 
 .services {
     padding: 100px 20px;
-}
-
-.services > div {
     max-width: 1520px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    color: #bfc0c0;
-    transition: all 0.6s 0.4s ease-in-out;
 }
 
 .services h3 {
@@ -219,7 +211,6 @@
     max-width: 1520px;
     margin: 0 auto;
     color: #2d3142;
-    transition: all 0.6s 0.4s ease-in-out;
 }
 
 .cards h3 {
@@ -412,4 +403,99 @@
     color: #bfc0c0;
     margin-top: 20px;
     height: 110px;
+}
+
+.sustainable {
+    padding: 100px 20px;
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.sustainable div:nth-child(1) {
+    max-width: 700px;
+}
+
+.sustainable h3 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #2d3142;
+    margin-bottom: 20px;
+}
+
+.sustainable p {
+    font-size: 20px;
+    color: #4f5d75;
+}
+
+.sustainable img {
+    width: 100%;
+    border-radius: 5px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.recognition {
+    padding: 100px 20px;
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recognition > div:nth-child(1) {
+    background: #2d3142;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px #0000004f;
+}
+
+.secondCarousel .carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondCarousel .carouselItem > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.secondCarousel .carouselItem h4 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #b3679b;
+    border-bottom: 2px solid #4f5d75;
+}
+
+.secondCarousel .carouselItem p {
+    font-size: 17px;
+    color: #bfc0c0;
+    text-align: start;
+}
+
+.secondCarousel .carouselItem img {
+    max-width: 250px;
+}
+
+.recognition h3 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #2d3142;
+    margin-bottom: 20px;
+}
+
+.recognition p {
+    font-size: 20px;
+    color: #4f5d75;
 }
