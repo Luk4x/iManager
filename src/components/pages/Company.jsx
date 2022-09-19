@@ -16,7 +16,26 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
+import AnimatedNumber from 'react-animated-number/build/AnimatedNumber';
+
+import { useState, useRef } from 'react';
+
 export default function Company() {
+    const [evolutionEnterpriseValue, setEvolutionEnterpriseValue] = useState(0);
+    const [evolutionCollaboratorsValue, setEvolutionCollaboratorsValue] = useState(0);
+    const [evolutionPresenceValue, setEvolutionPresenceValue] = useState(0);
+    const evolutionSectionRef = useRef(null);
+
+    window.onscroll = () => {
+        const evolutionSectionOffset = evolutionSectionRef.current.offsetTop;
+        const userOffset = window.scrollY;
+
+        if (userOffset >= evolutionSectionOffset - 400) {
+            setEvolutionEnterpriseValue(20);
+            setEvolutionCollaboratorsValue(4);
+            setEvolutionPresenceValue(99);
+        }
+    };
     return (
         <section className={styles.section}>
             <article className={styles.headerImage}>
@@ -42,6 +61,8 @@ export default function Company() {
                     <div>
                         <h3>Criamos o que simplifica a gestão das empresas</h3>
                         <p>Simplificar é tirar as burocracias da frente e conectar as soluções que a sua empresa precisa em um só lugar.</p>
+                        <br />
+                        <p>Nós da iManager percebemos uma dificuldade das empresas viemos trazer a solução que ninguém trouxe: Reunimos em um Web App tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p>
                     </div>
                     <img src={CompanyImage2} alt="woman programmer working" />
                 </ScrollAnimation>
@@ -134,61 +155,129 @@ export default function Company() {
                     </li>
                 </ul>
             </article>
-            <article className={styles.evolution}>
+            <article className={styles.evolution} ref={evolutionSectionRef}>
                 <h3>Números da nossa evolução</h3>
                 <div className={styles.evolutionCardsList}>
                     <div>
-                        <h4>+ de 20 Milhões</h4>
+                        <h4>
+                            + de{' '}
+                            <AnimatedNumber
+                                value={evolutionEnterpriseValue}
+                                style={{
+                                    transitionProperty: 'all',
+                                    transition: '1s ease-out',
+                                    fontSize: 50
+                                }}
+                                duration={1200}
+                                formatValue={v => v.toFixed(0)}
+                            />{' '}
+                            Milhões
+                        </h4>
                         <p>de empresas simplificando a gestão, um número que só cresce a cada dia.</p>
                     </div>
                     <div>
                         <h4>
-                            + de <br />4 mil
+                            + de <br />{' '}
+                            <AnimatedNumber
+                                value={evolutionCollaboratorsValue}
+                                style={{
+                                    transitionProperty: 'all',
+                                    transition: '1s ease-out',
+                                    fontSize: 50
+                                }}
+                                duration={900}
+                                formatValue={v => v.toFixed(0)}
+                            />{' '}
+                            mil
                         </h4>
                         <p>colaboradores fazem parte da iManager.</p>
                     </div>
                     <div>
-                        <h4>99%</h4>
+                        <h4>
+                            <AnimatedNumber
+                                value={evolutionPresenceValue}
+                                style={{
+                                    transitionProperty: 'all',
+                                    transition: '1s ease-out',
+                                    fontSize: 50
+                                }}
+                                duration={1800}
+                                formatValue={v => v.toFixed(0)}
+                            />
+                            %
+                        </h4>
                         <p>de presença nos municípios brasileiros.</p>
                     </div>
                 </div>
             </article>
-            <article id="now" className={styles.trajectory}>
+            <article className={styles.trajectory}>
                 <div>
                     <h3>Nossa Trajetória</h3>
                     <p>Numa jornada com grandes transformações, cada momento é importante para continuarmos crescendo e inovando.</p>
                 </div>
-                <Carousel className={styles.carouselRoot} showArrows={true} showStatus={false} transitionTime={800}>
+                <Carousel className={styles.carouselRoot} showArrows={true} showStatus={false} transitionTime={800} showThumbs={false}>
                     <div>
-                        <h4>1994</h4>
+                        <h4>
+                            <span>&emsp;&emsp;</span>
+                            1994
+                            <span>2015</span>
+                        </h4>
                         <p>Nasce o iManagement Enterprise e posteriormente o iManagement App.</p>
                     </div>
                     <div>
-                        <h4>2015</h4>
+                        <h4>
+                            <span>1994</span>
+                            2015
+                            <span>2017</span>
+                        </h4>
                         <p>Lançamos a Conta Digital iManagement e nos tornamos a primeira empresa de gestão digital do país.</p>
                     </div>
                     <div>
-                        <h4>2017</h4>
+                        <h4>
+                            <span>2015</span>
+                            2017
+                            <span>2018</span>
+                        </h4>
                         <p>A iManagement Enterprise passa a ser iManager.</p>
                     </div>
                     <div>
-                        <h4>2018</h4>
+                        <h4>
+                            <span>2017</span>
+                            2018
+                            <span>2019</span>
+                        </h4>
                         <p>Fomos a primeira empresa de gestão digital a oferecer uma solução de gerenciamento corporativo gratuita, completa, autônoma, simples e totalmente online.</p>
                     </div>
                     <div>
-                        <h4>2019</h4>
+                        <h4>
+                            <span>2018</span>
+                            2019
+                            <span>2020</span>
+                        </h4>
                         <p>Lançamos oficialmente nossa plataforma de seguros e de gestão, e criamos nossa própria operadora móvel virtual.</p>
                     </div>
                     <div>
-                        <h4>2020</h4>
+                        <h4>
+                            <span>2019</span>
+                            2020
+                            <span>2021</span>
+                        </h4>
                         <p>Estabelecemos parcerias com os melhores lojistas do Brasil e com conceituadas companhias aéreas.</p>
                     </div>
                     <div>
-                        <h4>2021</h4>
+                        <h4>
+                            <span>2020</span>
+                            2021
+                            <span>2022</span>
+                        </h4>
                         <p>Lançamos oficialmente o iManager Empresas e criamos o plano iManager Plus.</p>
                     </div>
                     <div>
-                        <h4>2022</h4>
+                        <h4>
+                            <span>2021</span>
+                            2022
+                            <span>&emsp;&emsp;</span>
+                        </h4>
                         <p>Migramos nossa base de dados e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
                     </div>
                 </Carousel>
@@ -196,6 +285,3 @@ export default function Company() {
         </section>
     );
 }
-
-/* <p>O iManager é um gerenciador de custo baseado na Web que visa auxiliar empresas em sua gestão de projetos.</p>
-<p>Nós da iManager percebemos uma dificuldade das empresas e estamos aqui trazendo a solução que ninguém trouxe: Reunimos em uma Aplicação Web tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p> */
