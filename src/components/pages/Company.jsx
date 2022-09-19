@@ -16,6 +16,7 @@ import { SiPlatzi, SiFastapi, SiPowerbi } from 'react-icons/si';
 import { CgMathPlus } from 'react-icons/cg';
 import { RiShoppingBagFill } from 'react-icons/ri';
 import { BsCreditCard2FrontFill, BsCheckLg } from 'react-icons/bs';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -297,7 +298,7 @@ export default function Company() {
                     </div>
                 </Carousel>
             </article>
-            <article id="now" className={styles.sustainable}>
+            <article className={styles.sustainable}>
                 <ScrollAnimation animateIn="animate__fadeDown" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <h3>Ser sustentável é agilizar e incluir.</h3>
                     <p>Geramos valor não só para nossos clientes, mas também para colaboradores, investidores e para a sociedade como um todo. Sempre alinhados com nossos pilares de gestão, Ambiental, Social e Governança.</p>
@@ -350,6 +351,43 @@ export default function Company() {
                     <h3>Prêmios e reconhecimentos</h3>
                     <p>Somos reconhecidos e premiados em diversas áreas, por nossas ações inovadoras e focadas em impactar positivamente a vida das pessoas, a gestão das empresas, e o mundo.</p>
                 </ScrollAnimation>
+            </article>
+            <article id="now" className={styles.partnership}>
+                <h3>Imprensa e Parcerias</h3>
+                <p>Pedidos de imprensa, parcerias e mais informações? Fale com a gente.</p>
+                <div className={styles.partnershipInfo}>
+                    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={100} animatePreScroll={false}>
+                        <h4>Para informações e entrevistas</h4>
+                        <p>Mande um e-mail para nossa assessoria de imprensa:</p>
+                        <a href="#">imprensa@iManager.com.br</a>
+                        <a href="#">iManager@idealhks.com</a>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={600} animatePreScroll={false}>
+                        <h4>Press Kit e Guia da Marca</h4>
+                        <p>Acesse nosso guia caso precise utilizar nossa marca e nossos materiais visuais.</p>
+                        <a href="#">
+                            <button>
+                                <span>Baixar material</span>
+                                <FiArrowUpRight />
+                            </button>
+                        </a>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={1800} animatePreScroll={false}>
+                        <h4>Para patrocínios</h4>
+                        <p>Mande um e-mail para:</p>
+                        <a href="#">patrocinios@iManager.com.br</a>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={1100} animatePreScroll={false}>
+                        <h4>Fotos institucionais</h4>
+                        <p>O melhor do Inter para você. Nossa galeria de fotos à sua disposição.</p>
+                        <a href="#">
+                            <button>
+                                <span>Baixar fotos</span>
+                                <FiArrowUpRight />
+                            </button>
+                        </a>
+                    </ScrollAnimation>
+                </div>
             </article>
         </section>
     );
