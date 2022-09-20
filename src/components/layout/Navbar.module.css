@@ -5,9 +5,10 @@
     left: 30px;
     color: #b3679b;
     font-size: 70px;
-    border: 4px solid #4f5d75;
+    border: 4px solid #2d3142;
     border-radius: 50%;
     box-shadow: 0 0 10px #b3679b;
+    background: #2d3142;
 }
 
 .navbar {

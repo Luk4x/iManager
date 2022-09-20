@@ -1,0 +1,118 @@
+.section {
+    min-width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section a {
+    color: #b3679b;
+    transition: all 0.1s ease-in-out;
+}
+
+.section a:hover {
+    border-bottom: 2px solid #b3679b;
+}
+
+.section h2,
+h3 {
+    font-size: 40px;
+    color: #2d3142;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 20px;
+    color: #4f5d75;
+    margin-top: 12px;
+    line-height: 28px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.color {
+    color: #b3679b;
+}
+
+.contactHeader {
+    background-color: #b3679b;
+    background-image: url('../../assets/contactHeaderImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    z-index: 1;
+    filter: brightness(60%);
+    position: relative;
+    top: -105px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contactHeader > div,
+.contactHeader h3 {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    color: #bfc0c0;
+    font-size: 50px;
+    font-weight: 500;
+    filter: brightness(140%);
+}
+
+.contactHeader > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.contactHeader div > p {
+    border-bottom: 2px solid #b3679b;
+    font-size: 30px;
+    line-height: 35px;
+    color: #bfc0c0;
+}
+
+.contactHeader div > svg {
+    font-size: 60px;
+    color: #b3679b;
+    background: #2d3142;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.helpCenter {
+    position: relative;
+    top: -52.5px;
+    padding: 0 20px;
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.helpCenter > div:nth-child(1) {
+    max-width: 960px;
+}
+
+.helpCenter > svg {
+    color: #b3679b;
+    font-size: 300px;
+}
+
+.helpCenterShowCase {
+    padding: 0 20px 60px;
+    max-width: 1550px;
+    margin: 0 auto;
+}

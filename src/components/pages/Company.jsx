@@ -46,6 +46,7 @@ export default function Company() {
             setEvolutionPresenceValue(99);
         }
     };
+
     return (
         <section className={styles.section}>
             <article className={styles.headerImage} id="companyHeader">
