@@ -1,6 +1,8 @@
 import styles from './Company.module.css';
 
 import SubmitButton from '../form/SubmitButton';
+import IManagerFooter from '../layout/IManagerFooter';
+
 import CompanyImage2 from '../../assets/companyImage2.jpg';
 import CompanyImage4 from '../../assets/companyImage4.jpg';
 import CompanyImage6 from '../../assets/companyImage6.jpg';
@@ -294,7 +296,7 @@ export default function Company() {
                             2022
                             <span>&emsp;&emsp;</span>
                         </h4>
-                        <p>Migramos nossa base de dados e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
+                        <p>Migramos nossa base acionária para a Nasdaq, importante bolsa de valores americana, e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
                     </div>
                 </Carousel>
             </article>
@@ -359,8 +361,8 @@ export default function Company() {
                     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={100} animatePreScroll={false}>
                         <h4>Para informações e entrevistas</h4>
                         <p>Mande um e-mail para nossa assessoria de imprensa:</p>
-                        <a href="#">imprensa@iManager.com.br</a>
-                        <a href="#">iManager@idealhks.com</a>
+                        <a href="mailto:#">imprensa@iManager.com.br</a>
+                        <a href="mailto:#">iManager@idealhks.com</a>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={600} animatePreScroll={false}>
                         <h4>Press Kit e Guia da Marca</h4>
@@ -375,7 +377,7 @@ export default function Company() {
                     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={1800} animatePreScroll={false}>
                         <h4>Para patrocínios</h4>
                         <p>Mande um e-mail para:</p>
-                        <a href="#">patrocinios@iManager.com.br</a>
+                        <a href="mailto:#">patrocinios@iManager.com.br</a>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1} delay={1100} animatePreScroll={false}>
                         <h4>Fotos institucionais</h4>
@@ -449,6 +451,7 @@ export default function Company() {
                     </ScrollAnimation>
                 </div>
             </article>
+            <IManagerFooter />
         </section>
     );
 }

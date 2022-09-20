@@ -440,11 +440,11 @@
 .recognition {
     padding: 100px 20px;
     max-width: 1520px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -526,6 +526,8 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     max-width: 1520px;
     margin: 0 auto;
