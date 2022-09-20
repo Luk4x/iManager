@@ -350,7 +350,7 @@
 .evolutionCardsList h4 {
     font-size: 50px;
     font-weight: 500;
-    color: #b3679b;
+    color: #4f5d75;
     text-shadow: 0 0 10px #0000004f;
     filter: brightness(110%);
 }
@@ -500,34 +500,39 @@
     color: #4f5d75;
 }
 
-.partnership {
+.partnership,
+.news {
     padding: 100px 20px;
     text-align: center;
-    max-width: 1520px;
-    margin: 0 auto;
 }
 
-.partnership h3 {
+.partnership h3,
+.news h3 {
     color: #2d3142;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.partnership p {
+.partnership p,
+.news p {
     color: #4f5d75;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.partnershipInfo {
+.partnershipInfo,
+.newsInfo {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-width: 1520px;
+    margin: 0 auto;
 }
 
-.partnershipInfo > div {
+.partnershipInfo > div,
+.newsInfo > div {
     border: 2px solid #bfc0c0;
     border-radius: 10px;
     padding: 20px;
@@ -541,14 +546,17 @@
 }
 
 .partnershipInfo h4,
-.partnershipInfo a {
+.partnershipInfo a,
+.newsInfo h4,
+.newsInfo a {
     font-size: 18px;
     color: #b3679b;
     text-decoration: none;
     transition: all 0.1s ease-in-out;
 }
 
-.partnership button {
+.partnership button,
+.news button {
     background: none;
     border: none;
     color: #b3679b;
@@ -560,10 +568,34 @@
     gap: 5px;
 }
 
-.partnership a:hover {
+.partnership a:hover,
+.news a:hover {
     border-bottom: 2px solid #b3679b;
 }
 
-.partnership button svg {
+.partnership button svg,
+.news button svg {
     font-size: 20px;
+}
+
+.news {
+    background: #e8e8e8;
+}
+
+.news > p > a {
+    color: #b3679b;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.newsInfoTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsInfoTitleContainer svg {
+    font-size: 25px;
+    color: #b3679b;
 }
