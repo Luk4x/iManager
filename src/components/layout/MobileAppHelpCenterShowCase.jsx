@@ -11,10 +11,14 @@ import { Carousel } from 'react-responsive-carousel';
 
 import 'animate.css/animate.min.css';
 
+import { useRef } from 'react';
+
 export default function MobileAppHelpCenterShowCase() {
+    const searchInputContainer = useRef();
+
     return (
         <div className={styles.mobileRightButtons}>
-            <div className={styles.mobileContainer} id="mobileShowCase">
+            <div className={`${styles.mobileContainer} mobileContainer`} id="mobileShowCase">
                 <div className={styles.purpleBackground} />
                 <div className={styles.mobileHeader}>
                     <p>9:30</p>
@@ -33,8 +37,18 @@ export default function MobileAppHelpCenterShowCase() {
                         <h3>Surgiu a dúvida</h3>
                         <BsQuestionSquareFill />
                     </div>
-                    <div>
-                        <input type="text" placeholder="Pesquise aqui" />
+                    <div ref={searchInputContainer}>
+                        <input
+                            type="text"
+                            placeholder="Pesquise aqui"
+                            id="searchInput"
+                            onFocus={() => {
+                                searchInputContainer.current.style.transform = 'scale(1.3)';
+                            }}
+                            onBlur={() => {
+                                searchInputContainer.current.style.transform = 'scale(1)';
+                            }}
+                        />
                         <BsSearch />
                     </div>
                 </div>

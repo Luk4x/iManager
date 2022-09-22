@@ -90,6 +90,7 @@
     padding: 2px 10px;
     margin-bottom: 5px;
     position: sticky;
+    z-index: 3;
     color: #2d3142;
     top: 0;
 }
@@ -161,18 +162,25 @@
 
 .mobileSearch > div:nth-child(2) {
     box-shadow: 0 5px 8px #00000020;
-    padding: 10px;
+    padding: 2px 10px;
     border-radius: 5px;
     gap: 8px;
     width: 75%;
     margin: 5px auto 0 auto;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .mobileSearch > div:nth-child(2) svg {
-    font-size: 22px;
+    font-size: 35px;
     color: #4f5d75;
     cursor: pointer;
+    border-radius: 20px;
+    padding: 0 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.mobileSearch > div:nth-child(2) svg:active {
+    background: #2d31422d;
 }
 
 .mobileSearch input {
@@ -182,10 +190,6 @@
     outline: none;
     width: 90%;
     color: #4f5d75;
-}
-
-.mobileSearch > div:nth-child(2):hover {
-    transform: scale(1.3);
 }
 
 .mobileServices {
@@ -324,7 +328,6 @@
     position: absolute;
     right: 15px;
     bottom: 25px;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 

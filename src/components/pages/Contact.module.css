@@ -39,7 +39,7 @@ h3 {
 
 .contactHeader {
     background-color: #b3679b;
-    background-image: url('../../assets/contactHeaderImage.jpg');
+    background-image: url('../../assets/contactHeaderImage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@ h3 {
 }
 
 .contactHeader div > p {
-    border-bottom: 2px solid #b3679b;
+    border-bottom: 2px solid #2d3142;
     font-size: 30px;
     line-height: 35px;
     color: #bfc0c0;
