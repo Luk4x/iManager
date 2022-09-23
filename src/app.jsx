@@ -11,9 +11,28 @@ import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
+
 export default function App() {
     return (
         <Router>
+            <CustomCursor
+                targets={'.mobileRightButtons'}
+                customClass="customCursor"
+                dimensions={24}
+                fill="#b3679b"
+                smoothness={{
+                    movement: 0.8,
+                    scale: 1,
+                    opacity: 1
+                }}
+                targetOpacity={1}
+                opacity={0}
+                strokeColor="#b3679b5f"
+                strokeWidth={12}
+                targetScale={1}
+            />
             <Navbar />
             <Switch>
                 <Container customClass="minHeight">

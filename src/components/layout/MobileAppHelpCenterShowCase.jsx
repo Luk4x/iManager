@@ -17,7 +17,7 @@ export default function MobileAppHelpCenterShowCase() {
     const searchInputContainer = useRef();
 
     return (
-        <div className={styles.mobileRightButtons}>
+        <div className={`${styles.mobileRightButtons} mobileRightButtons`}>
             <div className={`${styles.mobileContainer} mobileContainer`} id="mobileShowCase">
                 <div className={styles.purpleBackground} />
                 <div className={styles.mobileHeader}>
