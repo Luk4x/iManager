@@ -16,6 +16,15 @@ import { useRef } from 'react';
 export default function MobileAppHelpCenterShowCase() {
     const searchInputContainer = useRef();
 
+    const chatBotContainer = useRef();
+    const toggleChatBotContainer = () => {
+        if (chatBotContainer.current.style.transform !== 'translateX(0px)') {
+            chatBotContainer.current.style.transform = 'translateX(0)';
+        } else {
+            chatBotContainer.current.style.transform = 'translateX(-400px)';
+        }
+    };
+
     return (
         <div className={`${styles.mobileRightButtons} mobileRightButtons`}>
             <div className={`${styles.mobileContainer} mobileContainer`} id="mobileShowCase">
@@ -133,8 +142,9 @@ export default function MobileAppHelpCenterShowCase() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.chatBotContainer} ref={chatBotContainer}></div>
             </div>
-            <div className={`${styles.sheeleIcon} animate__animated animate__slow animate__infinite animate__tada`} />
+            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} animate__animated animate__slow animate__infinite animate__tada`} />
             <div className={styles.mobileUpDownButtons}></div>
         </div>
     );
