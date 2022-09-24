@@ -1,10 +1,11 @@
 import styles from './MobileAppHelpCenterShowCase.module.css';
 
 import { BsReception4, BsWifi, BsBatteryFull, BsArrowLeft, BsQuestionSquareFill, BsSearch, BsCreditCard2FrontFill } from 'react-icons/bs';
-import { RiShoppingBagFill } from 'react-icons/ri';
+import { RiShoppingBagFill, RiMessage3Fill, RiMessage3Line } from 'react-icons/ri';
 import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter } from 'react-icons/md';
 import { CgMathPlus } from 'react-icons/cg';
 import { VscPackage } from 'react-icons/vsc';
+import { IoIosArrowDown } from 'react-icons/io';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -15,19 +16,23 @@ import { useRef } from 'react';
 
 export default function MobileAppHelpCenterShowCase() {
     const searchInputContainer = useRef();
+    const mobileContainer = useRef();
 
     const chatBotContainer = useRef();
     const toggleChatBotContainer = () => {
-        if (chatBotContainer.current.style.transform !== 'translateX(0px)') {
-            chatBotContainer.current.style.transform = 'translateX(0)';
+        if (chatBotContainer.current.style.height !== '100%') {
+            chatBotContainer.current.style.height = '100%';
+            mobileContainer.current.style.overflowY = 'hidden';
+            mobileContainer.current.scrollTo(0, 0);
         } else {
-            chatBotContainer.current.style.transform = 'translateX(-400px)';
+            chatBotContainer.current.style.height = '0';
+            mobileContainer.current.style.overflowY = 'scroll';
         }
     };
 
     return (
         <div className={`${styles.mobileRightButtons} mobileRightButtons`}>
-            <div className={`${styles.mobileContainer} mobileContainer`} id="mobileShowCase">
+            <div className={`${styles.mobileContainer} mobileContainer`} id="mobileShowCase" ref={mobileContainer}>
                 <div className={styles.purpleBackground} />
                 <div className={styles.mobileHeader}>
                     <p>9:30</p>
@@ -66,7 +71,7 @@ export default function MobileAppHelpCenterShowCase() {
                         <h4>Serviços</h4>
                         <button>Ver Todos</button>
                     </div>
-                    <Carousel className={styles.servicesCarousel} showArrows={false} showStatus={false} transitionTime={900} showThumbs={false} showIndicators={false} swipeable={true} useKeyboardArrows={true} emulateTouch={true}>
+                    <Carousel className={styles.servicesCarousel} showArrows={false} showStatus={false} transitionTime={1000} showThumbs={false} showIndicators={false} swipeable={true} useKeyboardArrows={true} emulateTouch={true} autoPlay infiniteLoop interval={4000}>
                         <div className={styles.servicesCarouselDiv}>
                             <div className={styles.carouselServiceContainer}>
                                 <RiShoppingBagFill />
@@ -142,7 +147,20 @@ export default function MobileAppHelpCenterShowCase() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.chatBotContainer} ref={chatBotContainer}></div>
+                <div className={styles.chatBotContainer} ref={chatBotContainer}>
+                    <div className={styles.chatBotContainerBlur} />
+                    <div className={styles.chatBot}>
+                        <div className={styles.chatBotHeader}>
+                            <div>
+                                <RiMessage3Fill />
+                                <p>
+                                    <span>Sheele</span> ChatBot
+                                </p>
+                            </div>
+                            <IoIosArrowDown onClick={toggleChatBotContainer} />
+                        </div>
+                    </div>
+                </div>
             </div>
             <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} animate__animated animate__slow animate__infinite animate__tada`} />
             <div className={styles.mobileUpDownButtons}></div>

@@ -1,6 +1,6 @@
 .iconLogo {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 15px;
     left: 30px;
     color: #b3679b;
@@ -29,7 +29,6 @@
     border-bottom: 1px solid #bfc0c0;
     margin: 0 auto;
     flex-wrap: wrap;
-    position: relative;
     z-index: 2;
 }
 

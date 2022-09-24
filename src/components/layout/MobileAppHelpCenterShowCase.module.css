@@ -11,7 +11,8 @@
     height: 500px;
     position: relative;
     box-shadow: 0 0 10px #0000005f;
-    overflow: hidden scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .purpleBackground {
@@ -316,7 +317,7 @@
 }
 
 .sheeleIcon {
-    background-color: #b3679b;
+    background-color: #eee;
     background-image: url('../../assets/sheeleImage.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -334,16 +335,82 @@
 
 .sheeleIcon:hover,
 .sheeleIcon:active {
-    box-shadow: 0 0 4px #2d3142d0;
+    background-color: #b3679b;
 }
 
 .chatBotContainer {
     width: 100%;
-    height: 598px;
-    background: #b3679b;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.8s ease-in-out;
+}
+
+.chatBotContainerBlur {
     position: absolute;
     top: 0;
-    transform: translateX(-400px);
-    z-index: 2;
-    transition: all 0.5s ease-in-out;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    backdrop-filter: blur(4px);
+}
+
+.chatBot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: #f7f7f7;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    box-shadow: 2px 0 10px #00000020;
+}
+
+.chatBotHeader {
+    background: #eee;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #b3679b;
+    border-bottom: 2px solid #4f5d75;
+}
+
+.chatBotHeader > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.chatBotHeader > div svg {
+    transform: scaleX(-1);
+}
+
+.chatBotHeader > div p {
+    font-size: 14px;
+    color: #2d3142;
+    margin: 0;
+    margin-top: 3px;
+    line-height: 15px;
+}
+
+.chatBotHeader > div p span {
+    font-weight: 500;
+    color: #b3679b;
+}
+
+.chatBotHeader > svg {
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    padding: 3px;
+    color: #2d3142;
+}
+
+.chatBotHeader > svg:active {
+    background: #2d31422d;
 }

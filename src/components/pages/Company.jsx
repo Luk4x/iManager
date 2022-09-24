@@ -312,7 +312,7 @@ export default function Company() {
             </article>
             <article className={styles.recognition} id="recognition">
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} duration={2} delay={100} animatePreScroll={false}>
-                    <Carousel className={styles.secondCarousel} showArrows={true} showStatus={false} transitionTime={500} showThumbs={false}>
+                    <Carousel className={styles.secondCarousel} showArrows={true} showStatus={false} transitionTime={1000} showThumbs={false} autoPlay>
                         <div className={styles.carouselItem}>
                             <img src={iBestImage} alt="iBest award image" />
                             <div>

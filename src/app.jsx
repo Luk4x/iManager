@@ -17,22 +17,6 @@ import 'custom-cursor-react/dist/index.css';
 export default function App() {
     return (
         <Router>
-            <CustomCursor
-                targets={'.mobileRightButtons'}
-                customClass="customCursor"
-                dimensions={24}
-                fill="#b3679b"
-                smoothness={{
-                    movement: 0.8,
-                    scale: 1,
-                    opacity: 1
-                }}
-                targetOpacity={1}
-                opacity={0}
-                strokeColor="#b3679b5f"
-                strokeWidth={12}
-                targetScale={1}
-            />
             <Navbar />
             <Switch>
                 <Container customClass="minHeight">
@@ -43,6 +27,22 @@ export default function App() {
                         <Projects />
                     </Route>
                     <Route path="/contact">
+                        <CustomCursor
+                            targets={'.mobileRightButtons'}
+                            customClass="customCursor"
+                            dimensions={24}
+                            fill="#b3679b"
+                            smoothness={{
+                                movement: 0.8,
+                                scale: 1,
+                                opacity: 1
+                            }}
+                            targetOpacity={1}
+                            opacity={0}
+                            strokeColor="#b3679b5f"
+                            strokeWidth={12}
+                            targetScale={1}
+                        />
                         <Contact />
                     </Route>
                     <Route path="/create-project">
