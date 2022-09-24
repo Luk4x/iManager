@@ -3,11 +3,13 @@ import styles from './MobileAppHelpCenterShowCase.module.css';
 import sheeleImage from '../../assets/sheeleImage.png';
 
 import { BsReception4, BsWifi, BsBatteryFull, BsArrowLeft, BsQuestionSquareFill, BsSearch, BsCreditCard2FrontFill } from 'react-icons/bs';
-import { RiShoppingBagFill, RiMessage3Fill, RiMessage3Line } from 'react-icons/ri';
-import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter } from 'react-icons/md';
+import { RiShoppingBagFill, RiMessage3Fill } from 'react-icons/ri';
+import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter, MdAccountCircle } from 'react-icons/md';
 import { CgMathPlus } from 'react-icons/cg';
-import { VscPackage } from 'react-icons/vsc';
+import { VscPackage, VscPreview } from 'react-icons/vsc';
 import { IoIosArrowDown } from 'react-icons/io';
+import { AiOutlineAudio } from 'react-icons/ai';
+import { BiSend } from 'react-icons/bi';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -20,6 +22,9 @@ export default function MobileAppHelpCenterShowCase() {
     const searchInputContainer = useRef();
     const mobileContainer = useRef();
     const [activeChatBot, setActiveChatBot] = useState(false);
+
+    const chatBotInput = useRef();
+    const [chatBotInputValue, setChatBotInputValue] = useState('');
 
     const chatBotContainer = useRef();
     const toggleChatBotContainer = () => {
@@ -164,11 +169,45 @@ export default function MobileAppHelpCenterShowCase() {
                             </div>
                             <IoIosArrowDown onClick={toggleChatBotContainer} />
                         </div>
-                        <div className={`${styles.chatBotSheeleMessageContainer} animate__animated animate__fadeIn`}>
+                        <div className={`${styles.chatBotSheeleMessageContainer} animate__animated  animate__slow animate__fadeIn`}>
                             <div className={styles.chatBotSheeleMessage}>
                                 Olá! Sou a <span>Sheele</span>, a Chatbot do iManager. Como posso ajudá-lo?
                             </div>
                             <img src={sheeleImage} alt="Chabot Sheele Image" />
+                        </div>
+                        <ul className={styles.userOptions}>
+                            <li>
+                                <BsCreditCard2FrontFill />
+                                Cartão iManager
+                            </li>
+                            <li>
+                                <RiShoppingBagFill />
+                                Shopping
+                            </li>
+                            <li>
+                                <MdLock />
+                                Seguros
+                            </li>
+                            <li>
+                                <CgMathPlus />
+                                Plano Plus
+                            </li>
+                            <li>
+                                <VscPreview />
+                                Meu Projeto
+                            </li>
+                            <li>
+                                <MdAttachMoney />
+                                Empréstimo
+                            </li>
+                            <li>
+                                <MdAccountCircle />
+                                Conta
+                            </li>
+                        </ul>
+                        <div className={styles.chatBotInputArea}>
+                            <input type="text" placeholder="Digite sua mensagem..." onChange={() => setChatBotInputValue(chatBotInput.current.value)} ref={chatBotInput} />
+                            <button>{chatBotInputValue !== '' ? <BiSend /> : <AiOutlineAudio />}</button>
                         </div>
                     </div>
                 </div>
