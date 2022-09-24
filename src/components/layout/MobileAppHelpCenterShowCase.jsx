@@ -1,5 +1,7 @@
 import styles from './MobileAppHelpCenterShowCase.module.css';
 
+import sheeleImage from '../../assets/sheeleImage.png';
+
 import { BsReception4, BsWifi, BsBatteryFull, BsArrowLeft, BsQuestionSquareFill, BsSearch, BsCreditCard2FrontFill } from 'react-icons/bs';
 import { RiShoppingBagFill, RiMessage3Fill, RiMessage3Line } from 'react-icons/ri';
 import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter } from 'react-icons/md';
@@ -12,19 +14,22 @@ import { Carousel } from 'react-responsive-carousel';
 
 import 'animate.css/animate.min.css';
 
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 
 export default function MobileAppHelpCenterShowCase() {
     const searchInputContainer = useRef();
     const mobileContainer = useRef();
+    const [activeChatBot, setActiveChatBot] = useState(false);
 
     const chatBotContainer = useRef();
     const toggleChatBotContainer = () => {
         if (chatBotContainer.current.style.height !== '100%') {
+            setActiveChatBot(true);
             chatBotContainer.current.style.height = '100%';
             mobileContainer.current.style.overflowY = 'hidden';
             mobileContainer.current.scrollTo(0, 0);
         } else {
+            setActiveChatBot(false);
             chatBotContainer.current.style.height = '0';
             mobileContainer.current.style.overflowY = 'scroll';
         }
@@ -159,11 +164,17 @@ export default function MobileAppHelpCenterShowCase() {
                             </div>
                             <IoIosArrowDown onClick={toggleChatBotContainer} />
                         </div>
+                        <div className={`${styles.chatBotSheeleMessageContainer} animate__animated animate__fadeIn`}>
+                            <div className={styles.chatBotSheeleMessage}>
+                                Olá! Sou a <span>Sheele</span>, a Chatbot do iManager. Como posso ajudá-lo?
+                            </div>
+                            <img src={sheeleImage} alt="Chabot Sheele Image" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} animate__animated animate__slow animate__infinite animate__tada`} />
-            <div className={styles.mobileUpDownButtons}></div>
+            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} ${activeChatBot ? styles.activeSheeleIcon : 'animate__animated animate__slow animate__infinite animate__tada'}`} />
+            <div className={styles.mobileUpDownButtons} />
         </div>
     );
 }
