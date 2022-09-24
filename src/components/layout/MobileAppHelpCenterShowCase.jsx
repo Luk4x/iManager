@@ -159,6 +159,7 @@ export default function MobileAppHelpCenterShowCase() {
                 </div>
                 <div className={styles.chatBotContainer} ref={chatBotContainer}>
                     <div className={styles.chatBotContainerBlur} />
+                    <div className={styles.attendantIcon} style={activeChatBot ? {} : { display: 'none' }} />
                     <div className={styles.chatBot}>
                         <div className={styles.chatBotHeader}>
                             <div>
@@ -169,13 +170,13 @@ export default function MobileAppHelpCenterShowCase() {
                             </div>
                             <IoIosArrowDown onClick={toggleChatBotContainer} />
                         </div>
-                        <div className={`${styles.chatBotSheeleMessageContainer} animate__animated  animate__slow animate__fadeIn`}>
+                        <div className={`${styles.chatBotSheeleMessageContainer} ${activeChatBot ? 'animate__animated animate__delay-1s animate__fadeIn' : ''}`}>
                             <div className={styles.chatBotSheeleMessage}>
                                 Olá! Sou a <span>Sheele</span>, a Chatbot do iManager. Como posso ajudá-lo?
                             </div>
                             <img src={sheeleImage} alt="Chabot Sheele Image" />
                         </div>
-                        <ul className={styles.userOptions}>
+                        <ul className={`${styles.userOptions} ${activeChatBot ? 'animate__animated animate__delay-2s animate__fadeIn' : ''}`}>
                             <li>
                                 <BsCreditCard2FrontFill />
                                 Cartão iManager
@@ -212,7 +213,7 @@ export default function MobileAppHelpCenterShowCase() {
                     </div>
                 </div>
             </div>
-            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} ${activeChatBot ? styles.activeSheeleIcon : 'animate__animated animate__slow animate__infinite animate__tada'}`} />
+            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} animate__animated ${activeChatBot ? `${styles.activeSheeleIcon} animate__delay-1s animate__tada` : 'animate__infinite animate__pulse'}`} />
             <div className={styles.mobileUpDownButtons} />
         </div>
     );
