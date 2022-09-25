@@ -37,6 +37,10 @@ h3 {
     color: #b3679b;
 }
 
+.borderBottom {
+    border-bottom: 2px solid #b3679b;
+}
+
 .contactHeader {
     background-color: #b3679b;
     background-image: url('../../assets/contactHeaderImage.png');
@@ -116,5 +120,56 @@ h3 {
     max-width: 1550px;
     margin: 0 auto;
     display: flex;
-    gap: 60px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.mobileHelpCenterShowCase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileHelpCenterShowCaseDesc svg,
+.desktopHelpCenterShowCaseDesc svg {
+    font-size: 70px;
+    padding: 10px;
+    background: linear-gradient(45deg, #b3679b, #e688c8);
+    border-radius: 40%;
+    color: #eee;
+}
+
+.mobileHelpCenterShowCaseDesc h3,
+.desktopHelpCenterShowCaseDesc h3 {
+    margin: 8px 0 2px;
+    font-size: 30px;
+}
+
+.mobileHelpCenterShowCaseDesc p,
+.desktopHelpCenterShowCaseDesc p {
+    margin: 0;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.desktopHelpCenterShowCase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.desktopHelpCenterShowCaseDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.desktopHelpCenterShowCaseDesc p {
+    width: 400px;
 }

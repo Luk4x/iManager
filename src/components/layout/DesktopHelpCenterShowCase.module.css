@@ -1,24 +1,19 @@
 .monitorFoot {
     display: inline-block;
     position: relative;
-    filter: brightness(90%);
 }
 
-.monitorFoot::before,
-.monitorFoot::after {
+.monitorFoot::before {
     content: '';
     position: absolute;
     z-index: -1;
-    right: 40px;
-    bottom: 127px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
     background: #b3679b;
-    width: 50px;
-    height: 50px;
-    clip-path: polygon(30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%);
-}
-
-.monitorFoot::after {
-    left: 40px;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(30% 65%, 0 100%, 46% 100%, 100% 100%, 70% 65%);
 }
 
 .monitorContainer {

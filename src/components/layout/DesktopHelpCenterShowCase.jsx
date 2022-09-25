@@ -10,7 +10,13 @@ import { MdLock, MdOutlineAttachMoney } from 'react-icons/md';
 import { GiCommercialAirplane } from 'react-icons/gi';
 import { FiArrowUpRight } from 'react-icons/fi';
 
+import 'animate.css/animate.min.css';
+
+import { useState } from 'react';
+
 export default function DesktopHelpCenterShowCase() {
+    const [faqInputFocus, setFaqInputFocus] = useState(false);
+
     return (
         <div className={styles.monitorFoot}>
             <div className={styles.monitorContainer}>
@@ -28,9 +34,9 @@ export default function DesktopHelpCenterShowCase() {
                     </h4>
                 </div>
                 <div className={styles.backgroundHighlight}>
-                    <div className={styles.inputArea}>
+                    <div className={`${styles.inputArea} ${!faqInputFocus ? 'animate__animated animate__slower animate__infinite animate__flash' : ''}`}>
                         <AiOutlineSearch />
-                        <input type="text" placeholder="Busque por respostas..." />
+                        <input type="text" placeholder="Busque por respostas..." onFocus={() => setFaqInputFocus(true)} onBlur={() => setFaqInputFocus(false)} />
                     </div>
                 </div>
                 <ul className={styles.faqList}>
@@ -188,7 +194,7 @@ export default function DesktopHelpCenterShowCase() {
                             <div className={styles.faqFooter}>
                                 <div className={styles.sheele2Image} />
                                 <div>
-                                    <h6>4 artigos nesta coleção</h6>
+                                    <h6>3 artigos nesta coleção</h6>
                                     <p>
                                         Escrito por <span>Sheele</span>.
                                     </p>
