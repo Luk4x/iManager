@@ -1,6 +1,7 @@
 import styles from './Contact.module.css';
 
 import MobileAppHelpCenterShowCase from '../layout/MobileAppHelpCenterShowCase';
+import DesktopHelpCenterShowCase from '../layout/DesktopHelpCenterShowCase';
 
 import { BiSupport } from 'react-icons/bi';
 import { MdOutlineContactSupport } from 'react-icons/md';
@@ -33,6 +34,7 @@ export default function Contact() {
             </article>
             <article className={styles.helpCenterShowCase} id="helpCenterShowcase">
                 <MobileAppHelpCenterShowCase />
+                <DesktopHelpCenterShowCase />
             </article>
         </section>
     );

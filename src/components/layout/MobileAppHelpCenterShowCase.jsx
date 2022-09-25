@@ -120,41 +120,41 @@ export default function MobileAppHelpCenterShowCase() {
                         <button>Ver Todos</button>
                     </div>
                     <div className={styles.topicsArticles}>
-                        <div>
+                        <a href="#?">
                             <VscPackage />
                             <div>
                                 <h5>Reembolsos e devoluções</h5>
                                 <p>12 artigos</p>
                             </div>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#?">
                             <MdPayments />
                             <div>
                                 <h5>Pagamentos</h5>
                                 <p>6 artigos</p>
                             </div>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#?">
                             <MdBusinessCenter />
                             <div>
                                 <h5>Gestão e Negócios</h5>
                                 <p>19 artigos</p>
                             </div>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#?">
                             <RiShoppingBagFill />
                             <div>
                                 <h5>Compras e entregas</h5>
                                 <p>8 artigos</p>
                             </div>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#?">
                             <MdAttachMoney />
                             <div>
                                 <h5>Empréstimos</h5>
                                 <p>3 artigos</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.chatBotContainer} ref={chatBotContainer}>

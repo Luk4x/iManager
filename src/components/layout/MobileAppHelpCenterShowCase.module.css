@@ -11,8 +11,7 @@
     height: 500px;
     position: relative;
     box-shadow: 0 0 10px #0000005f;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden scroll;
 }
 
 .purpleBackground {
@@ -284,14 +283,19 @@
     gap: 8px;
 }
 
-.topicsArticles > div {
+.topicsArticles > a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 7px;
+    text-decoration: none;
 }
 
-.topicsArticles > div:active {
+.topicsArticles > a:hover {
+    border: none;
+}
+
+.topicsArticles > a:active {
     text-decoration: underline;
 }
 
@@ -336,19 +340,20 @@
 .activeSheeleIcon {
     background-color: #eee;
     border: 5px solid #eee;
-    width: 75px;
-    height: 75px;
+    width: 72px;
+    height: 72px;
     right: 160px;
     bottom: 364px;
     box-shadow: 0 0 10px #00000040;
+    border-radius: 30%;
 }
 
 .activeSheeleIcon::after {
     content: '';
     position: absolute;
     transition: all 0.8s 1s ease-in-out;
-    right: -3px;
-    bottom: -3px;
+    right: -7px;
+    bottom: -7px;
     width: 8px;
     height: 8px;
     background: rgb(55, 204, 55);
@@ -382,13 +387,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    border-radius: 30%;
     border: 5px solid #eee;
-    width: 60px;
-    height: 60px;
-    top: 67px;
+    width: 58px;
+    height: 58px;
+    top: 68px;
     left: 100px;
     box-shadow: 0 0 10px #00000040;
     transition: all 0.8s ease-in-out;
@@ -398,8 +401,8 @@
     content: '';
     position: absolute;
     transition: all 0.8s 1s ease-in-out;
-    right: -4.5px;
-    bottom: -4.5px;
+    right: -8px;
+    bottom: -8px;
     width: 8px;
     height: 8px;
     background: orange;
@@ -486,6 +489,7 @@
 .chatBotSheeleMessageContainer img {
     width: 50px;
     border-radius: 50%;
+    background: none;
     margin-left: 10px;
     margin-top: 3px;
 }
