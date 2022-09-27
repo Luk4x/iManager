@@ -35,6 +35,7 @@
     font-size: 65px;
     font-weight: 500;
     text-shadow: 0 0 10px #00000030;
+    text-align: center;
 }
 
 .headerImage button {
@@ -69,13 +70,12 @@
 .colorHighlight h3 {
     font-size: 50px;
     font-weight: 500;
-    max-width: 480px;
     color: #bfc0c0;
 }
 
 .colorHighlight p {
     font-size: 20px;
-    max-width: 600px;
+    width: 40%;
     color: #bfc0c0;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .simplicity div:nth-child(1) {
-    max-width: 700px;
+    width: 60%;
 }
 
 .simplicity h3 {
@@ -142,6 +142,8 @@
     color: #eee;
     text-shadow: 0 0 2px #0000004f;
     filter: brightness(110%);
+    text-align: center;
+    padding: 0 20px;
 }
 
 .services {
@@ -150,6 +152,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 50px;
     margin: 0 auto;
 }
 
@@ -168,14 +171,14 @@
     font-size: 21.5px;
     color: #4f5d75;
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .services p svg {
     font-size: 30px;
     color: #b3679b;
+    position: relative;
+    top: 6px;
+    margin-left: 5px;
 }
 
 .services ul {
@@ -411,14 +414,14 @@
     padding: 100px 20px;
     max-width: 1520px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 40px;
     margin: 0 auto;
 }
 
 .sustainable div:nth-child(1) {
-    max-width: 700px;
+    width: 50%;
 }
 
 .sustainable h3 {
@@ -603,4 +606,32 @@
 .newsInfoTitleContainer svg {
     font-size: 25px;
     color: #b3679b;
+}
+
+@media screen and (max-width: 1280px) {
+    .headerImage {
+        height: 60vh;
+    }
+
+    .headerImage > h2 {
+        font-size: 55px;
+    }
+
+    .colorHighlight h3,
+    .simplicity h3,
+    .sustainable h3,
+    .recognition h3,
+    .partnership h3,
+    .news h3 {
+        font-size: 40px;
+    }
+
+    .colorHighlight p,
+    .simplicity p,
+    .sustainable p,
+    .recognition p,
+    .partnership p,
+    .news p {
+        font-size: 18px;
+    }
 }

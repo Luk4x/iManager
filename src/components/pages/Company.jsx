@@ -59,7 +59,11 @@ export default function Company() {
             </article>
             <article id="colorHighlight" className={styles.colorHighlight}>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.6} delay={100} animatePreScroll={false}>
-                    <h3>Nascemos para fazer diferente</h3>
+                    <h3>
+                        Nascemos para fazer
+                        <br />
+                        diferente
+                    </h3>
                     <p>
                         A iManager está aqui para fazer aquilo que ninguém conseguiu...
                         <br />
