@@ -19,3 +19,9 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
+@media screen and (max-width: 1200px) {
+    .start {
+        justify-content: center;
+    }
+}

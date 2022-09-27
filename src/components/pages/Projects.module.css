@@ -5,7 +5,7 @@
 
 .project > svg {
     position: absolute;
-    font-size: 250px;
+    font-size: 350px;
     color: #b3679b;
     left: 50%;
     top: 50%;
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     margin-bottom: 30px;
     width: 100%;
 }
@@ -46,4 +47,11 @@
     font-size: 22px;
     font-weight: 500;
     color: #2d3142;
+}
+
+@media screen and (max-width: 500px) {
+    .titleContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
 }

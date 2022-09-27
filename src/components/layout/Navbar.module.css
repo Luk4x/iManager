@@ -47,7 +47,7 @@
     font-weight: 400;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
     .list li a {
         font-size: 18px;
     }
