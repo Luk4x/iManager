@@ -58,3 +58,19 @@
     box-shadow: 0 0 10px #0000004f;
     margin-right: 20px;
 }
+
+@media screen and (max-width: 960px) {
+    .sectionContainer {
+        justify-content: center;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .home svg {
+        font-size: 280px;
+    }
+}
