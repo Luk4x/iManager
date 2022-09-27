@@ -148,11 +148,11 @@ export default function IManagerFooter() {
                         </li>
                         <li>
                             <p>Demais localidades:</p>
-                            <a href="tel:#">0800 999 9999</a>
+                            <a href="tel:#">0800 099 9999</a>
                         </li>
                         <li>
                             <p>SAC (24 horas):</p>
-                            <a href="tel:#">0800 999 9999</a>
+                            <a href="tel:#">0800 909 9999</a>
                         </li>
                         <li>
                             <p>Deficiente de fala e audição:</p>
@@ -160,7 +160,7 @@ export default function IManagerFooter() {
                         </li>
                         <li>
                             <p>Ouvidoria:</p>
-                            <a href="tel:#">0800 999 9999</a>
+                            <a href="tel:#">0800 990 9999</a>
                         </li>
                         <li>
                             <p>

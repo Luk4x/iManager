@@ -46,7 +46,9 @@ export default function Footer() {
                     </li>
                     <li>
                         <button onClick={() => navigator.clipboard.writeText('Luk4x#5068')}>
-                            <BsDiscord />
+                            <abbr title="Copy: Luk4x#5068">
+                                <BsDiscord />
+                            </abbr>
                         </button>
                     </li>
                 </ul>

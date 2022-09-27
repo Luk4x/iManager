@@ -33,7 +33,7 @@ export default function App() {
                             dimensions={24}
                             fill="#b3679b"
                             smoothness={{
-                                movement: 0.8,
+                                movement: 1,
                                 scale: 1,
                                 opacity: 1
                             }}

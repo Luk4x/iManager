@@ -101,10 +101,7 @@
 }
 
 .monitorHeader {
-    background-color: #b3679b;
-    background-image: url('../../assets/desktopHelpCenterImage.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(#b3679b40, #b3679b40), url('../../assets/desktopHelpCenterImage.jpg') center no-repeat;
     background-size: cover;
     height: 40%;
     display: flex;
