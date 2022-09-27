@@ -6,7 +6,7 @@
 
 .blurContainer {
     border-radius: 20px;
-    background: linear-gradient(-45deg, #bfc0c0, #eee);
+    background: linear-gradient(-45deg, #bfc0c0, transparent);
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;

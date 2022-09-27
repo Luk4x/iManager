@@ -4,15 +4,15 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 
 .projectContainer {
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
     gap: 20px;
 }
 
@@ -38,9 +38,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 98%;
-    width: 60%;
+    width: 80%;
     border: 2px solid #b3679b;
     border-radius: 5px;
     box-shadow: 0 0 10px #0000004f;
-    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .image {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .secContainer {
+        justify-content: center;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .projectContainer h2 {
+        font-size: 36px;
+    }
 }
