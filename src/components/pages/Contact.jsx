@@ -2,12 +2,15 @@ import styles from './Contact.module.css';
 
 import MobileAppHelpCenterShowCase from '../layout/MobileAppHelpCenterShowCase';
 import DesktopHelpCenterShowCase from '../layout/DesktopHelpCenterShowCase';
+import IManagerFooter from '../layout/IManagerFooter';
 
 import { BiSupport } from 'react-icons/bi';
 import { MdOutlineContactSupport, MdOutlineMonitor } from 'react-icons/md';
 import { GiSmartphone } from 'react-icons/gi';
-import { BsFillTelephoneFill, BsFillTelephonePlusFill } from 'react-icons/bs';
+import { BsFillTelephoneFill, BsFillTelephonePlusFill, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { FiPaperclip } from 'react-icons/fi';
+import { FaFacebookF, FaHandsHelping, FaHashtag, FaLinkedinIn } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -147,9 +150,53 @@ export default function Contact() {
                     </ScrollAnimation>
                 </div>
             </article>
-            <article className={styles.iManagerSocials}>
-
-            </article>
+            <div className={styles.iManagerSocialsBackground}>
+                <article className={styles.iManagerSocials}>
+                    <div>
+                        <h2>Redes sociais</h2>
+                        <p>Siga o iManager nas redes sociais e fique por dentro de todas as novidades da sua Conta Digital. Lembre-se: para sua segurança, verifique sempre o selo oficial das nossas redes! Assim você tem a certeza de que somos nós falando com você.</p>
+                        <p>
+                            Estamos sempre à disposição para tirar as suas dúvidas. <span className={styles.bold}>#contacomagente</span>
+                        </p>
+                        <div className={styles.iManagerSocialsIcons}>
+                            <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.5} delay={300} animatePreScroll={false}>
+                                <a href="#?">
+                                    <FaFacebookF />
+                                </a>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.5} delay={600} animatePreScroll={false}>
+                                <a href="#?">
+                                    <AiFillInstagram />
+                                </a>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.5} delay={900} animatePreScroll={false}>
+                                <a href="#?">
+                                    <BsTwitter />
+                                </a>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.5} delay={1200} animatePreScroll={false}>
+                                <a href="#?">
+                                    <FaLinkedinIn />
+                                </a>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.5} delay={1500} animatePreScroll={false}>
+                                <a href="#?">
+                                    <BsYoutube />
+                                </a>
+                            </ScrollAnimation>
+                        </div>
+                        <div className={styles.hashTag}>
+                            <FaHashtag />
+                            <div>
+                                <h4>contacomagente</h4>
+                                <p>O blog da Conta Digital do iManager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <FaHandsHelping />
+                </article>
+            </div>
+            <IManagerFooter />
         </section>
     );
 }

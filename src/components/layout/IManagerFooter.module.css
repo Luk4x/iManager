@@ -13,6 +13,7 @@
 
 .iManagerFooter a:hover {
     color: #b3679b;
+    border: none !important;
 }
 
 .footerContainer {
@@ -25,6 +26,13 @@
     color: #2d3142;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+.NasdaqListed p.NasdaqListedParagraph {
+    font-size: 16px;
+    color: #2d3142;
+    line-height: 17px;
+    margin: 0;
 }
 
 .NasdaqListed {
@@ -120,6 +128,10 @@
     margin-top: 15px;
 }
 
+.midLinks ul a {
+    color: #4f5d75;
+}
+
 .talkWithUs ul {
     list-style-type: none;
     display: flex;
@@ -148,12 +160,14 @@
 }
 
 .downFooter a,
-.downFooter p {
+.downFooter p,
+.downFooter p.copyRightParagraph {
     font-size: 12px;
-    color: #2d3142;
+    color: #2d3142 !important;
 }
 
-.downFooter p {
+.downFooter p,
+.downFooter p.copyRightParagraph {
     margin: 20px 0 7px;
 }
 

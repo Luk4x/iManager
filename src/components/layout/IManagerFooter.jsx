@@ -12,7 +12,7 @@ export default function IManagerFooter() {
                 <div>
                     <div className={styles.NasdaqListed}>
                         <TbWorld />
-                        <p>
+                        <p className={styles.NasdaqListedParagraph}>
                             <span>
                                 IMNGR <span>|</span> Nasdaq
                             </span>{' '}
@@ -197,7 +197,7 @@ export default function IManagerFooter() {
                         <a href="#">Política de Segurança da Informação para Fornecedores</a>
                     </li>
                 </ul>
-                <p>&copy; iManager S.A. CNPJ: 12.345.678/0001-09</p>
+                <p className={styles.copyRightParagraph}>&copy; iManager S.A. CNPJ: 12.345.678/0001-09</p>
                 <div>
                     <a href="#">
                         <GoLocation /> Belo Horizonte | MG - Av. ABCD, 9999 - EFGH. CEP: 99999-000

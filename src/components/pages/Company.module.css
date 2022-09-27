@@ -584,6 +584,7 @@
 
 .news {
     background: #e8e8e8;
+    border-bottom: 2px solid #ddd;
 }
 
 .news > p > a {
