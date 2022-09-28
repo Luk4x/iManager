@@ -65,6 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .colorHighlight h3 {
@@ -92,7 +93,8 @@
 }
 
 .simplicity div:nth-child(1) {
-    width: 60%;
+    min-width: 400px;
+    width: 50%;
 }
 
 .simplicity h3 {
@@ -105,6 +107,7 @@
 .simplicity p {
     font-size: 20px;
     color: #4f5d75;
+    text-align: justify;
 }
 
 .simplicity img {
@@ -234,9 +237,11 @@
     justify-content: space-around;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .cardList > div {
+    min-width: 280px;
     width: 350px;
     height: 400px;
     background: #2d3142;
@@ -336,6 +341,7 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
+    flex-wrap: wrap;
 }
 
 .evolutionCardsList > div {
@@ -343,7 +349,7 @@
     padding: 20px;
     filter: brightness(110%);
     border-radius: 5px;
-    max-width: 300px;
+    width: 300px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -421,6 +427,7 @@
 }
 
 .sustainable div:nth-child(1) {
+    min-width: 400px;
     width: 50%;
 }
 
@@ -434,6 +441,7 @@
 .sustainable p {
     font-size: 20px;
     color: #4f5d75;
+    text-align: justify;
 }
 
 .sustainable img {
@@ -486,7 +494,7 @@
 .secondCarousel .carouselItem p {
     font-size: 17px;
     color: #bfc0c0;
-    text-align: start;
+    text-align: justify;
 }
 
 .secondCarousel .carouselItem img {
@@ -608,7 +616,7 @@
     color: #b3679b;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .headerImage {
         height: 60vh;
     }
@@ -633,5 +641,340 @@
     .partnership p,
     .news p {
         font-size: 18px;
+    }
+
+    .recognition p {
+        text-align: justify;
+    }
+
+    .recognition > div:nth-child(1) {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .evolution {
+        height: 800px;
+    }
+
+    .evolution h3 {
+        color: #2d3142;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .colorHighlight h3,
+    .simplicity h3,
+    .sustainable h3,
+    .recognition h3,
+    .partnership h3,
+    .news h3 {
+        font-size: 35px;
+    }
+
+    .services h3 {
+        font-size: 40px;
+    }
+
+    .services p {
+        font-size: 19.5px;
+    }
+
+    .services li {
+        font-size: 18px;
+    }
+
+    .secondCarousel .carouselItem h4 {
+        font-size: 30px;
+    }
+
+    .secondCarousel .carouselItem p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .colorHighlight > div {
+        flex-direction: column;
+    }
+
+    .colorHighlight h3 {
+        text-align: center;
+    }
+
+    .colorHighlight p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .simplicity,
+    .sustainable {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .simplicity div:nth-child(1),
+    .sustainable div:nth-child(1),
+    .recognition > div:nth-child(2) {
+        min-width: 280px;
+        width: 70%;
+    }
+
+    .recognition {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .recognition p {
+        text-align: center;
+    }
+
+    .recognition > div:nth-child(1) {
+        width: 90%;
+    }
+
+    .secondCarousel .carouselItem h4 {
+        font-size: 40px;
+    }
+
+    .secondCarousel .carouselItem p {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .services {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services li {
+        text-align: left;
+    }
+
+    .gettingBetter ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partnershipInfo,
+    .newsInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partnershipInfo > div,
+    .newsInfo > div {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .simplicity h3,
+    .sustainable h3,
+    .recognition h3,
+    .partnership h3,
+    .news h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cards h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .recognition > div:nth-child(1) {
+        width: 100%;
+    }
+
+    .secondCarousel .carouselItem h4 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    .evolution {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 669px) {
+    .simplicityImageDown p {
+        font-size: 30px;
+    }
+
+    .simplicity div:nth-child(1),
+    .sustainable div:nth-child(1),
+    .recognition > div:nth-child(2) {
+        width: 90%;
+    }
+
+    .gettingBetter h3 {
+        font-size: 40px;
+    }
+
+    .gettingBetter p {
+        font-size: 20px;
+    }
+
+    .gettingBetter ul {
+        grid-template-columns: 1fr;
+    }
+
+    .trajectory .carouselRoot p {
+        font-size: 19px;
+        height: 140px;
+    }
+
+    .secondCarousel .carouselItem h4 {
+        font-size: 30px;
+    }
+
+    .secondCarousel .carouselItem p {
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .secondCarousel .carouselItem h4 {
+        font-size: 25px;
+    }
+
+    .secondCarousel .carouselItem p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .recognition p {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .secondCarousel .carouselItem h4 {
+        font-size: 25px;
+    }
+
+    .secondCarousel .carouselItem p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .simplicity div:nth-child(1),
+    .sustainable div:nth-child(1),
+    .recognition > div:nth-child(2) {
+        width: 100%;
+    }
+
+    .simplicityImageDown p {
+        font-size: 25px;
+    }
+
+    .colorHighlight h3 {
+        font-size: 29px;
+    }
+
+    .services img {
+        height: 500px;
+    }
+
+    .cards h3 {
+        font-size: 30px;
+    }
+
+    .gettingBetter ul {
+        font-size: 30px;
+    }
+
+    .gettingBetter ul span {
+        font-size: 32px;
+    }
+
+    .evolution h3 {
+        font-size: 40px;
+    }
+
+    .trajectory p {
+        font-size: 18px;
+    }
+
+    .secondCarousel .carouselItem {
+        flex-direction: column;
+    }
+
+    .secondCarousel .carouselItem > div {
+        align-items: center;
+    }
+
+    .secondCarousel .carouselItem p {
+        margin: 0 5px 40px;
+    }
+
+    .secondCarousel .carouselItem img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    .services h3 {
+        font-size: 38px;
+    }
+
+    .services p {
+        font-size: 18px;
+    }
+
+    .services li {
+        font-size: 16.5px;
+    }
+
+    .services img {
+        height: 450px;
+    }
+
+    .cards h3 {
+        font-size: 28px;
+    }
+
+    .gettingBetter h3 {
+        font-size: 35px;
+    }
+
+    .gettingBetter p {
+        font-size: 18px;
+    }
+
+    .gettingBetter ul {
+        font-size: 27px;
+    }
+
+    .gettingBetter ul span {
+        font-size: 29px;
+    }
+
+    .evolutionCardsList {
+        gap: 40px;
+    }
+
+    .evolutionCardsList > div {
+        width: 280px;
+    }
+
+    .trajectory .carouselRoot p {
+        font-size: 16px;
+    }
+
+    .secondCarousel .carouselItem h4 {
+        font-size: 22px;
     }
 }

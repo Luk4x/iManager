@@ -28,13 +28,15 @@ import { Carousel } from 'react-responsive-carousel';
 
 import AnimatedNumber from 'react-animated-number/build/AnimatedNumber';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Company() {
     const [evolutionEnterpriseValue, setEvolutionEnterpriseValue] = useState(0);
     const [evolutionCollaboratorsValue, setEvolutionCollaboratorsValue] = useState(0);
     const [evolutionPresenceValue, setEvolutionPresenceValue] = useState(0);
     const evolutionSectionRef = useRef(null);
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     window.onscroll = () => {
         const evolutionSectionOffset = evolutionSectionRef.current.offsetTop;
@@ -46,6 +48,10 @@ export default function Company() {
             setEvolutionPresenceValue(99);
         }
     };
+
+    useEffect(() => {
+        window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
+    }, []);
 
     return (
         <section className={styles.section}>
@@ -238,72 +244,109 @@ export default function Company() {
                     <h3>Nossa Trajetória</h3>
                     <p>Numa jornada com grandes transformações, cada momento é importante para continuarmos crescendo e inovando.</p>
                 </div>
-                <Carousel className={styles.carouselRoot} showArrows={true} showStatus={false} transitionTime={900} showThumbs={false}>
-                    <div>
-                        <h4>
-                            <span>&emsp;&emsp;</span>
-                            1994
-                            <span>2015</span>
-                        </h4>
-                        <p>Nasce o iManagement Enterprise e posteriormente o iManagement App.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>1994</span>
-                            2015
-                            <span>2017</span>
-                        </h4>
-                        <p>Lançamos a Conta Digital iManagement e nos tornamos a primeira empresa de gestão digital do país.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2015</span>
-                            2017
-                            <span>2018</span>
-                        </h4>
-                        <p>A iManagement Enterprise passa a ser iManager.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2017</span>
-                            2018
-                            <span>2019</span>
-                        </h4>
-                        <p>Fomos a primeira empresa de gestão digital a oferecer uma solução de gerenciamento corporativo gratuita, completa, autônoma, simples e totalmente online.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2018</span>
-                            2019
-                            <span>2020</span>
-                        </h4>
-                        <p>Lançamos oficialmente nossa plataforma de seguros e de gestão, e criamos nossa própria operadora móvel virtual.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2019</span>
-                            2020
-                            <span>2021</span>
-                        </h4>
-                        <p>Estabelecemos parcerias com os melhores lojistas do Brasil e com conceituadas companhias aéreas.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2020</span>
-                            2021
-                            <span>2022</span>
-                        </h4>
-                        <p>Lançamos oficialmente o iManager Empresas e criamos o plano iManager Plus.</p>
-                    </div>
-                    <div>
-                        <h4>
-                            <span>2021</span>
-                            2022
-                            <span>&emsp;&emsp;</span>
-                        </h4>
-                        <p>Migramos nossa base acionária para a Nasdaq, importante bolsa de valores americana, e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
-                    </div>
-                </Carousel>
+                {windowWidth > 600 ? (
+                    <Carousel className={styles.carouselRoot} showArrows={true} showStatus={false} transitionTime={900} showThumbs={false} verticalSwipe="natural" swipeable={true} useKeyboardArrows={true} emulateTouch={true}>
+                        <div>
+                            <h4>
+                                <span>&emsp;&emsp;</span>
+                                1994
+                                <span>2015</span>
+                            </h4>
+                            <p>Nasce o iManagement Enterprise e posteriormente o iManagement App.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>1994</span>
+                                2015
+                                <span>2017</span>
+                            </h4>
+                            <p>Lançamos a Conta Digital iManagement e nos tornamos a primeira empresa de gestão digital do país.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2015</span>
+                                2017
+                                <span>2018</span>
+                            </h4>
+                            <p>A iManagement Enterprise passa a ser iManager.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2017</span>
+                                2018
+                                <span>2019</span>
+                            </h4>
+                            <p>Fomos a primeira empresa de gestão digital a oferecer uma solução de gerenciamento corporativo gratuita, completa, autônoma, simples e totalmente online.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2018</span>
+                                2019
+                                <span>2020</span>
+                            </h4>
+                            <p>Lançamos oficialmente nossa plataforma de seguros e de gestão, e criamos nossa própria operadora móvel virtual.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2019</span>
+                                2020
+                                <span>2021</span>
+                            </h4>
+                            <p>Estabelecemos parcerias com os melhores lojistas do Brasil e com conceituadas companhias aéreas.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2020</span>
+                                2021
+                                <span>2022</span>
+                            </h4>
+                            <p>Lançamos oficialmente o iManager Empresas e criamos o plano iManager Plus.</p>
+                        </div>
+                        <div>
+                            <h4>
+                                <span>2021</span>
+                                2022
+                                <span>&emsp;&emsp;</span>
+                            </h4>
+                            <p>Migramos nossa base acionária para a Nasdaq, importante bolsa de valores americana, e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
+                        </div>
+                    </Carousel>
+                ) : (
+                    <Carousel className={styles.carouselRoot} showArrows={true} showStatus={false} transitionTime={900} showThumbs={false} verticalSwipe="natural" swipeable={true} useKeyboardArrows={true} emulateTouch={true}>
+                        <div>
+                            <h4>1994</h4>
+                            <p>Nasce o iManagement Enterprise e posteriormente o iManagement App.</p>
+                        </div>
+                        <div>
+                            <h4>2015</h4>
+                            <p>Lançamos a Conta Digital iManagement e nos tornamos a primeira empresa de gestão digital do país.</p>
+                        </div>
+                        <div>
+                            <h4>2017</h4>
+                            <p>A iManagement Enterprise passa a ser iManager.</p>
+                        </div>
+                        <div>
+                            <h4>2018</h4>
+                            <p>Fomos a primeira empresa de gestão digital a oferecer uma solução de gerenciamento corporativo gratuita, completa, autônoma, simples e totalmente online.</p>
+                        </div>
+                        <div>
+                            <h4>2019</h4>
+                            <p>Lançamos oficialmente nossa plataforma de seguros e de gestão, e criamos nossa própria operadora móvel virtual.</p>
+                        </div>
+                        <div>
+                            <h4>2020</h4>
+                            <p>Estabelecemos parcerias com os melhores lojistas do Brasil e com conceituadas companhias aéreas.</p>
+                        </div>
+                        <div>
+                            <h4>2021</h4>
+                            <p>Lançamos oficialmente o iManager Empresas e criamos o plano iManager Plus.</p>
+                        </div>
+                        <div>
+                            <h4>2022</h4>
+                            <p>Migramos nossa base acionária para a Nasdaq, importante bolsa de valores americana, e atingimos a marca de 20 milhões de cliente e lançamos a Global Account.</p>
+                        </div>
+                    </Carousel>
+                )}
             </article>
             <article className={styles.sustainable} id="sustainable">
                 <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
@@ -327,7 +370,7 @@ export default function Company() {
                         <div className={styles.carouselItem}>
                             <img src={reclameAquiImage} alt="reclame aqui award image" />
                             <div>
-                                <h4>Prêmio Reclame Aqui</h4>
+                                <h4>Reclame Aqui</h4>
                                 <p>Fomos eleitos o 2º melhor atendimento do Brasil por voto popular pelo segundo ano consecutivo - categoria de Gestores Digitais.</p>
                             </div>
                         </div>
