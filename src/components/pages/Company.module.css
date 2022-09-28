@@ -540,7 +540,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     gap: 20px;
     max-width: 1520px;
     margin: 0 auto;
@@ -760,8 +760,8 @@
 
     .partnershipInfo,
     .newsInfo {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .partnershipInfo > div,

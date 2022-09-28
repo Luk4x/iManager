@@ -9,7 +9,7 @@ export default function IManagerFooter() {
     return (
         <div className={styles.iManagerFooter}>
             <div className={styles.footerContainer} id="IManagerFooter">
-                <div>
+                <div className={styles.socialsGridPart}>
                     <div className={styles.NasdaqListed}>
                         <TbWorld />
                         <p className={styles.NasdaqListedParagraph}>
@@ -19,63 +19,67 @@ export default function IManagerFooter() {
                             Listed
                         </p>
                     </div>
-                    <div className={styles.downloadApp}>
-                        <h5>Baixe o Super App:</h5>
-                        <a href="#">
-                            <button>
-                                <BsApple />
-                                <span>App Store</span>
-                            </button>
-                        </a>
-                        <a href="#">
-                            <button>
-                                <IoLogoGooglePlaystore />
-                                <span>Google Play</span>
-                            </button>
-                        </a>
-                    </div>
-                    <div className={styles.followIManager}>
-                        <h5>Siga o iManager:</h5>
-                        <ul>
-                            <li>
+                    <div className={styles.socialsAndAppContainer}>
+                        <div className={styles.downloadApp}>
+                            <h5>Baixe o Super App:</h5>
+                            <div className={styles.downloadAppButtons}>
                                 <a href="#">
-                                    <BsInstagram />
+                                    <button>
+                                        <BsApple />
+                                        <span>App Store</span>
+                                    </button>
                                 </a>
-                            </li>
-                            <li>
                                 <a href="#">
-                                    <BsLinkedin />
+                                    <button>
+                                        <IoLogoGooglePlaystore />
+                                        <span>Google Play</span>
+                                    </button>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <BsFacebook />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <BsTwitter />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <BsYoutube />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <IoLogoTiktok />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <BsSpotify />
-                                </a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div className={styles.followIManager}>
+                            <h5>Siga o iManager:</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <BsInstagram />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <BsLinkedin />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <BsFacebook />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <BsTwitter />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <BsYoutube />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <IoLogoTiktok />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <BsSpotify />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div className={styles.midLinks}>
+                <div className={styles.midLinks} id={styles.firstMidLink}>
                     <h4>Pra você</h4>
                     <ul>
                         <li>
