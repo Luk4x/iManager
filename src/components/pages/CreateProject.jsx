@@ -13,7 +13,7 @@ export default function CreateProject() {
         project.cost = 0;
         project.services = [];
 
-        fetch('http://localhost:5000/projects', {
+        fetch(`${import.meta.env.VITE_BASE_URL}/projects`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

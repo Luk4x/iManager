@@ -27,7 +27,7 @@ export default function Project() {
     const [type, setType] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/projects/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ export default function Project() {
             setMessage(`Projeto Nº ${project.id} não pôde ser atualizado: O custo do projeto não pode ser maior que o orçamento!`);
             return false;
         } else {
-            fetch(`http://localhost:5000/projects/${project.id}`, {
+            fetch(`${import.meta.env.VITE_BASE_URL}/projects/${project.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ export default function Project() {
             return false;
         } else {
             project.cost = newCost;
-            fetch(`http://localhost:5000/projects/${project.id}`, {
+            fetch(`${import.meta.env.VITE_BASE_URL}/projects/${project.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ export default function Project() {
         projectUpdated.services = servicesUpdated;
         projectUpdated.cost -= parseFloat(cost);
 
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/projects/${projectUpdated.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -148,7 +148,7 @@ export default function Project() {
                     mapService.cost = parseFloat(service.cost);
                     mapService.desc = service.desc;
 
-                    fetch(`http://localhost:5000/projects/${project.id}`, {
+                    fetch(`${import.meta.env.VITE_BASE_URL}/projects/${project.id}`, {
                         method: 'PATCH',
                         headers: {
                             'Content-Type': 'application/json'

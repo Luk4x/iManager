@@ -1,8 +1,6 @@
 import styles from './ProjectCard.module.css';
 import styles2 from './Service.module.css';
 
-import { Link } from 'react-router-dom';
-
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 import { MdMiscellaneousServices } from 'react-icons/md';
 

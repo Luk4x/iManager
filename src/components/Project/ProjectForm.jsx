@@ -11,7 +11,7 @@ export default function ProjectForm({ btnText, handleSubmit, projectData }) {
     const [project, setProject] = useState(projectData || {});
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories', {
+        fetch(`${import.meta.env.VITE_BASE_URL}/categories`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

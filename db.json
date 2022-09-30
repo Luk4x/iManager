@@ -74,17 +74,6 @@
       "cost": 0,
       "services": [],
       "id": 4
-    },
-    {
-      "name": "aaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaa",
-      "budget": "48757",
-      "category": {
-        "id": 1,
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [

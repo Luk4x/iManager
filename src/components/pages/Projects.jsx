@@ -21,7 +21,7 @@ export default function Projects() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects', {
+        fetch(`${import.meta.env.VITE_BASE_URL}/projects`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ export default function Projects() {
     }, []);
 
     const removeProject = id => {
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/projects/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
