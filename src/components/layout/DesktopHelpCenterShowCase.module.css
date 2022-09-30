@@ -260,3 +260,15 @@
 .fullFaqButton:active {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 539px) {
+    .monitorContainer {
+        transform: scale(0.59);
+    }
+
+    .monitorFoot::before {
+        left: 50%;
+        bottom: 23px;
+        transform: scale(0.59) translateX(-80%);
+    }
+}

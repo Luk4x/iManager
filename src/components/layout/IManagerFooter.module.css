@@ -126,7 +126,7 @@
     color: #2d3142;
 }
 
-.midLinks ul {
+div.midLinks ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -139,20 +139,23 @@
     color: #4f5d75;
 }
 
-.talkWithUs ul {
+div.talkWithUs ul {
     list-style-type: none;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
     margin-top: 15px;
 }
 
-.talkWithUs p {
+div.talkWithUs p {
     font-size: 15.5px;
+    color: #2d3142;
+    line-height: 17px;
+    margin: 0;
 }
 
-.talkWithUs p:nth-last-child(1) {
+div.talkWithUs p:nth-last-child(1) {
     font-size: 13.5px;
     color: #4f5d75;
     text-align: justify;
@@ -228,7 +231,7 @@
         grid-column: 1/2;
     }
 
-    .talkWithUs {
+    div.talkWithUs {
         grid-row: 1/2;
     }
 }
@@ -256,7 +259,7 @@
         grid-column: unset;
     }
 
-    .talkWithUs {
+    div.talkWithUs {
         grid-row: unset;
     }
 

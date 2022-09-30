@@ -63,7 +63,7 @@ export default function Contact() {
                         </div>
                         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} duration={2} animatePreScroll={false}>
                             <p>
-                                Você pode tanto acessar nossa página de <span className={styles.borderBottom}>FAQ</span> para pesquisar sua dúvida pelos artigos, quanto clicar na <span className={`${styles.bold} ${styles.color}`}>Sheele</span>, no canto inferior direito desta página, para acessar o <span className={styles.bold}>Chat</span>.
+                                Na nossa página de <span className={styles.borderBottom}>FAQ</span> você pode tanto pesquisar suas dúvidas pelos artigos que dividimos em coleções, quanto acessar o <span className={styles.bold}>Chat</span> para conversar com a <span className={`${styles.bold} ${styles.color}`}>Sheele</span>.
                             </p>
                         </ScrollAnimation>
                     </div>
