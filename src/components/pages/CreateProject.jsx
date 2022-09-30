@@ -1,6 +1,9 @@
-import { useHistory } from 'react-router-dom';
-import ProjectForm from '../Project/ProjectForm';
 import styles from './CreateProject.module.css';
+
+import { useHistory } from 'react-router-dom';
+
+import ProjectForm from '../Project/ProjectForm';
+import PurpleBackground from '../layout/PurpleBackground';
 
 export default function CreateProject() {
     const history = useHistory();
@@ -27,6 +30,7 @@ export default function CreateProject() {
 
     return (
         <section className={styles.secContainer}>
+            <PurpleBackground style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: '100%' }} />
             <div className={styles.projectContainer}>
                 <h2>Criar Projeto</h2>
                 <p>Crie seu projeto e adicione serviços posteriormente!</p>

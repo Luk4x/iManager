@@ -6,6 +6,7 @@
 .project > svg {
     position: absolute;
     font-size: 350px;
+    width: 100%;
     color: #b3679b;
     left: 50%;
     top: 50%;

@@ -8,6 +8,7 @@ import Container from '../layout/Container';
 import LinkButton from '../layout/LinkButton';
 import ProjectCard from '../Project/ProjectCard';
 import Loading from '../layout/Loading';
+import PurpleBackground from '../layout/PurpleBackground';
 
 import { HiOutlineEmojiSad } from 'react-icons/hi';
 import { MdDesignServices } from 'react-icons/md';
@@ -53,6 +54,7 @@ export default function Projects() {
 
     return (
         <section className={styles.project}>
+            <PurpleBackground style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: '100%', height: '45%' }} />
             <Message msg={message} type={type} />
             {!loader && projects.length > 0 && <MdDesignServices />}
             <div className={styles.titleContainer}>

@@ -9,6 +9,7 @@
     box-shadow: 0 0 10px #0000004f;
     border: none;
     cursor: pointer;
+    min-width: 150px;
 }
 
 .SubmitButton:hover {

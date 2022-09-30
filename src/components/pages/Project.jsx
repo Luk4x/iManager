@@ -14,6 +14,7 @@ import ProjectForm from '../Project/ProjectForm';
 import Message from '../layout/Message';
 import ServiceForm from '../Project/ServiceForm';
 import ServiceCard from '../Project/ServiceCard';
+import PurpleBackground from '../layout/PurpleBackground';
 
 export default function Project() {
     const { id } = useParams();
@@ -176,6 +177,7 @@ export default function Project() {
 
     return (
         <Container customClass="column">
+            <PurpleBackground style={{ borderBottomLeftRadius: '20%', borderBottomRightRadius: '20%', height: '31%' }} />
             <Message msg={message} type={type} />
             {project.name ? (
                 <div className={styles.projectDetails}>
