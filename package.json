@@ -1,24 +1,32 @@
 {
-  "name": "imanager",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "json-server": "^0.17.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-router-dom": "5"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.1",
-    "vite": "^3.0.7"
-  }
+    "name": "imanager",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "backend": "json-server --watch db.json --port 5000",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "custom-cursor-react": "^1.0.5",
+        "gsap": "^3.11.1",
+        "json-server": "^0.17.0",
+        "react": "^18.2.0",
+        "react-animate-on-scroll": "^2.1.5",
+        "react-animated-number": "^0.4.4",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.4.0",
+        "react-responsive-carousel": "^3.2.23",
+        "react-router-dom": "5",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.17",
+        "@types/react-dom": "^18.0.6",
+        "@vitejs/plugin-react": "^2.0.1",
+        "vite": "^3.0.7"
+    }
 }

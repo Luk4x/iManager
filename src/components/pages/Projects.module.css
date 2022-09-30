@@ -1,0 +1,58 @@
+.project {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.project > svg {
+    position: absolute;
+    font-size: 350px;
+    width: 100%;
+    color: #b3679b;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.titleContainer > h2 {
+    font-size: 40px;
+    font-weight: 300;
+    border-bottom: 5px solid #b3679b;
+    border-radius: 5px;
+}
+
+.noProjects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.noProjects svg {
+    color: #b3679b;
+    font-size: 40px;
+}
+
+.noProjects h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #2d3142;
+}
+
+@media screen and (max-width: 500px) {
+    .titleContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

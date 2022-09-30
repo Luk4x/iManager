@@ -1,0 +1,35 @@
+.message {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    outline: none;
+    font-size: 16.5px;
+    border: 2px solid #2d3142;
+    color: #2d3142;
+    background: #b3679b;
+}
+
+.visible {
+    opacity: 1;
+    right: 30px;
+}
+
+.invisible {
+    opacity: 0;
+    right: 0;
+}
+
+.success {
+    border-color: #c3e6cb;
+    color: #155724;
+    background: #d4edda;
+}
+
+.error {
+    border-color: #f5c6cb;
+    color: #721c24;
+    background: #f8d7da;
+}

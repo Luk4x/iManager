@@ -1,0 +1,65 @@
+.iconLogo {
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    left: 30px;
+    color: #b3679b;
+    font-size: 70px;
+    border: 4px solid #2d3142;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #b3679b;
+    background: #2d3142;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2d3142;
+    padding: 22px 30px 42px 110px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 8px;
+    height: 40px;
+    border-bottom: 1px solid #bfc0c0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.list li a {
+    color: #bfc0c0;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.list li a:hover {
+    color: #b3679b;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 510px) {
+    .list li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .list {
+        top: 0;
+        justify-content: center;
+    }
+
+    .list li {
+        padding-top: 6.5px;
+    }
+}

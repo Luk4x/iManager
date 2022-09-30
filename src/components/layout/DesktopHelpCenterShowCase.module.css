@@ -1,0 +1,274 @@
+.monitorFoot {
+    display: inline-block;
+    position: relative;
+}
+
+.monitorFoot::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    background: #b3679b;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(30% 65%, 0 100%, 46% 100%, 100% 100%, 70% 65%);
+}
+
+.monitorContainer {
+    border: 6px solid #2d3142;
+    background: #f7f7f7;
+    border-radius: 10px;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 0 10px #0000005f;
+    overflow: hidden scroll;
+    filter: brightness(90%);
+}
+
+.monitorBarUp {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 25px;
+    background: #eee;
+    font-size: 16px;
+    padding: 8px;
+    color: #2d3142;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monitorBarUp > svg {
+    font-size: 20px;
+    background: #eee;
+    color: #b3679b;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.monitorBarUp > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.monitorBarDown {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px;
+    color: #2d3142;
+}
+
+.monitorBarDown > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.monitorBarDown > svg {
+    color: #b3679b;
+}
+
+.monitorBarDown svg:hover,
+.monitorBarUp svg:hover {
+    cursor: pointer;
+    color: #b3679b;
+}
+
+.monitorBarDown p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2d3142;
+    margin: 0;
+    line-height: 15px;
+    padding: 2px;
+}
+
+.monitorHeader {
+    background: linear-gradient(#b3679b40, #b3679b40), url('../../assets/desktopHelpCenterImage.jpg') center no-repeat;
+    background-size: cover;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(75%);
+    position: relative;
+    z-index: -1;
+}
+
+.monitorHeader h4 {
+    color: #f7f7f7;
+    font-size: 25px;
+    text-shadow: 0 0 4px #00000030;
+}
+
+.monitorHeader h4 span:nth-child(1) {
+    color: #b3679b;
+}
+
+.monitorHeader h4 span:nth-child(2) {
+    border-bottom: 2px solid #b3679b;
+}
+
+.backgroundHighlight {
+    background: linear-gradient(90deg, #b3679b, #e688c8);
+    padding: 5px;
+}
+
+.inputArea {
+    background-color: #f7f7f7;
+    width: 240px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: -15px;
+    filter: opacity(0.55);
+    color: #2d3142;
+}
+
+.inputArea input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+
+.inputArea svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.faqList {
+    margin: 30px auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq {
+    box-shadow: 0 0 8px #00000025;
+    background: #eee;
+    border-radius: 5px;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.faq a {
+    text-decoration: none;
+}
+
+.faq a:active {
+    text-decoration: underline;
+}
+
+.faqTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    color: #a2a4a4;
+    font-size: 40px;
+}
+
+.faqTitle h5 {
+    font-size: 19px;
+    font-weight: 500;
+    color: #b3679b;
+}
+
+.faq p {
+    font-size: 14px;
+    margin: 8px 0 14px;
+    line-height: 15px;
+}
+
+.faqFooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.sheele2Image {
+    background-color: none;
+    background-image: url('../../assets/sheele2Image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.faqFooter h6 {
+    color: #2d3142;
+    font-size: 12.5px;
+    font-weight: 500;
+}
+
+.faqFooter p {
+    font-size: 12px;
+    line-height: 13px;
+    margin: 3px 0;
+}
+
+.faqFooter p span {
+    font-weight: 500;
+    color: #b3679b;
+}
+
+.fullFaqButton {
+    border: none;
+    background: #b3679b;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    color: #eee;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.fullFaqButton:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 539px) {
+    .monitorContainer {
+        transform: scale(0.59);
+    }
+
+    .monitorFoot::before {
+        left: 50%;
+        bottom: 23px;
+        transform: scale(0.59) translateX(-80%);
+    }
+}
