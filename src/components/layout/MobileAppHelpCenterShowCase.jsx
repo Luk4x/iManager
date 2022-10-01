@@ -1,44 +1,23 @@
 import styles from './MobileAppHelpCenterShowCase.module.css';
 
-import sheeleImage from '../../assets/sheeleImage.png';
+import SheeleChatBot from '../layout/SheeleChatBot';
 
 import { BsReception4, BsWifi, BsBatteryFull, BsArrowLeft, BsQuestionSquareFill, BsSearch, BsCreditCard2FrontFill } from 'react-icons/bs';
-import { RiShoppingBagFill, RiMessage3Fill } from 'react-icons/ri';
-import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter, MdAccountCircle } from 'react-icons/md';
+import { RiShoppingBagFill } from 'react-icons/ri';
+import { MdLock, MdAirplaneTicket, MdNetworkCell, MdPayments, MdAttachMoney, MdBusinessCenter } from 'react-icons/md';
 import { CgMathPlus } from 'react-icons/cg';
-import { VscPackage, VscPreview } from 'react-icons/vsc';
-import { IoIosArrowDown } from 'react-icons/io';
-import { AiOutlineAudio } from 'react-icons/ai';
-import { BiSend } from 'react-icons/bi';
+import { VscPackage } from 'react-icons/vsc';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 import 'animate.css/animate.min.css';
 
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
 export default function MobileAppHelpCenterShowCase() {
-    const searchInputContainer = useRef();
     const mobileContainer = useRef();
-    const [activeChatBot, setActiveChatBot] = useState(false);
-
-    const chatBotInput = useRef();
-    const [chatBotInputValue, setChatBotInputValue] = useState('');
-
-    const chatBotContainer = useRef();
-    const toggleChatBotContainer = () => {
-        if (chatBotContainer.current.style.height !== '100%') {
-            setActiveChatBot(true);
-            chatBotContainer.current.style.height = '100%';
-            mobileContainer.current.style.overflowY = 'hidden';
-            mobileContainer.current.scrollTo(0, 0);
-        } else {
-            setActiveChatBot(false);
-            chatBotContainer.current.style.height = '0';
-            mobileContainer.current.style.overflowY = 'scroll';
-        }
-    };
+    const searchInputContainer = useRef();
 
     return (
         <div className={`${styles.mobileRightButtons} mobileRightButtons`}>
@@ -157,63 +136,8 @@ export default function MobileAppHelpCenterShowCase() {
                         </a>
                     </div>
                 </div>
-                <div className={styles.chatBotContainer} ref={chatBotContainer}>
-                    <div className={styles.chatBotContainerBlur} />
-                    <div className={styles.attendantIcon} style={activeChatBot ? {} : { display: 'none' }} />
-                    <div className={styles.chatBot}>
-                        <div className={styles.chatBotHeader}>
-                            <div>
-                                <RiMessage3Fill />
-                                <p>
-                                    <span>Sheele</span> ChatBot
-                                </p>
-                            </div>
-                            <IoIosArrowDown onClick={toggleChatBotContainer} />
-                        </div>
-                        <div className={`${styles.chatBotSheeleMessageContainer} ${activeChatBot ? 'animate__animated animate__delay-1s animate__fadeIn' : ''}`}>
-                            <div className={styles.chatBotSheeleMessage}>
-                                Olá! Sou a <span>Sheele</span>, a Chatbot do iManager. Como posso ajudá-lo?
-                            </div>
-                            <img src={sheeleImage} alt="Chabot Sheele Image" />
-                        </div>
-                        <ul className={`${styles.userOptions} ${activeChatBot ? 'animate__animated animate__delay-2s animate__fadeIn' : ''}`}>
-                            <li>
-                                <BsCreditCard2FrontFill />
-                                Cartão iManager
-                            </li>
-                            <li>
-                                <RiShoppingBagFill />
-                                Shopping
-                            </li>
-                            <li>
-                                <MdLock />
-                                Seguros
-                            </li>
-                            <li>
-                                <CgMathPlus />
-                                Plano Plus
-                            </li>
-                            <li>
-                                <VscPreview />
-                                Meu Projeto
-                            </li>
-                            <li>
-                                <MdAttachMoney />
-                                Empréstimo
-                            </li>
-                            <li>
-                                <MdAccountCircle />
-                                Conta
-                            </li>
-                        </ul>
-                        <div className={styles.chatBotInputArea}>
-                            <input type="text" placeholder="Digite sua mensagem..." onChange={() => setChatBotInputValue(chatBotInput.current.value)} ref={chatBotInput} />
-                            <button>{chatBotInputValue !== '' ? <BiSend /> : <AiOutlineAudio />}</button>
-                        </div>
-                    </div>
-                </div>
+                <SheeleChatBot externalContainer={mobileContainer} />
             </div>
-            <button onClick={toggleChatBotContainer} className={`${styles.sheeleIcon} animate__animated ${activeChatBot ? `${styles.activeSheeleIcon} animate__delay-1s animate__tada` : 'animate__infinite animate__pulse'}`} />
             <div className={styles.mobileUpDownButtons} />
         </div>
     );

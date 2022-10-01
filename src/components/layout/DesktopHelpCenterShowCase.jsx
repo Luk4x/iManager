@@ -1,5 +1,7 @@
 import styles from './DesktopHelpCenterShowCase.module.css';
 
+import SheeleChatBot from '../layout/SheeleChatBot';
+
 import { FaWindows, FaMonero } from 'react-icons/fa';
 import { IoIosArrowUp } from 'react-icons/io';
 import { BsFillVolumeUpFill, BsSquare, BsCreditCard2Front } from 'react-icons/bs';
@@ -12,14 +14,16 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 import 'animate.css/animate.min.css';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export default function DesktopHelpCenterShowCase() {
     const [faqInputFocus, setFaqInputFocus] = useState(false);
 
+    const monitorContainer = useRef();
+
     return (
         <div className={styles.monitorFoot}>
-            <div className={styles.monitorContainer}>
+            <div className={styles.monitorContainer} ref={monitorContainer}>
                 <div className={styles.monitorBarUp}>
                     <FaMonero />
                     <div>
@@ -28,6 +32,7 @@ export default function DesktopHelpCenterShowCase() {
                         <AiOutlineClose />
                     </div>
                 </div>
+                <SheeleChatBot externalContainer={monitorContainer} inDesktop={true} />
                 <div className={styles.monitorHeader}>
                     <h4>
                         <span>FAQ</span> da equipe <span>iManager</span>

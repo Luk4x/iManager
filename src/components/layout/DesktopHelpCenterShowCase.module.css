@@ -103,12 +103,14 @@
 .monitorHeader {
     background: linear-gradient(#b3679b40, #b3679b40), url('../../assets/desktopHelpCenterImage.jpg') center no-repeat;
     background-size: cover;
-    height: 40%;
+    height: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: brightness(75%);
-    position: relative;
+    position: absolute;
+    top: 20px;
     z-index: -1;
 }
 
@@ -129,6 +131,8 @@
 .backgroundHighlight {
     background: linear-gradient(90deg, #b3679b, #e688c8);
     padding: 5px;
+    position: relative;
+    top: 100px;
 }
 
 .inputArea {
@@ -167,6 +171,9 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
+    top: 100px;
+    margin-bottom: 120px;
 }
 
 .faq {
