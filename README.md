@@ -18,9 +18,9 @@
   <video src="https://user-images.githubusercontent.com/86276393/193448357-c566da3f-dc11-4cc6-b9bb-c28579e27168.mp4">
 </p>
 
-> Acesse o projeto online **[AQUI](https://luk4x-codeburgerv1.netlify.app/)**
+> Acesse o projeto online **[AQUI](https://luk4x-imanager.netlify.app/)**
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias Utilizadas
 
 -   [ReactJS](https://pt-br.reactjs.org)
 -   [React Router v5](https://v5.reactrouter.com/web/guides/quick-start)
@@ -79,24 +79,26 @@ Separados em componentes de **Project**, **Layout** e **Form**, o iManager tem m
   - **Select**: Esse componente se consiste num Select dinâmico reaproveitado nos componentes de **ProjectForm** e **ServiceForm**.
   - **SubmitButton**: Esse componente se consiste num botão dinâmico reaproveitado periodicamente pelo projeto.
   
-## 📖 Como usar
+## 📖 Clonando o Projeto
 
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) previamente instalados.<br>
+Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá no [repositório da API](https://github.com/Luk4x/iManager-json-server) e faça os passos sobre como cloná-la primeiro!<br>
+Feito esses dois passos, no terminal:
 
 ```bash
-# Clone esse repositório:
-$ git clone https://github.com/Luk4x/dev-burger-order-log-interface.git
+# Clone esse repositório com:
+$ git clone https://github.com/Luk4x/iManager.git
 
-# Entre no repositório:
-$ cd dev-burger-order-log-interface
+# Entre no repositório com:
+$ cd iManager
 
-# Instalar dependências
+# Instale as dependências com:
 $ yarn install
 
-# Executar o projeto
+# Execute o projeto com:
 $ yarn dev
 
-# O servidor irá iniciar em http://localhost:3000/.
+# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://127.0.0.1:5173/ ou http://localhost:5173/)
 ```
 
 ## 🤝 Contato dos Contribuintes
