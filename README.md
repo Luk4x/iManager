@@ -13,11 +13,14 @@
 <br>
 
 # 🪙 iManager Project Interface
+<br>
 
-<p align="center">
+## 📹 Apresentação em Vídeo do Projeto
+<div align="center">
   <video src="https://user-images.githubusercontent.com/86276393/193448357-c566da3f-dc11-4cc6-b9bb-c28579e27168.mp4">
-</p>
+</div>
 
+> **Caso o vídeo apresente algum erro, recarregue a página!**<br>
 > Acesse o projeto online **[AQUI](https://luk4x-imanager.netlify.app/)**
 
 ## 🚀 Tecnologias Utilizadas
@@ -40,8 +43,7 @@
 
 ## 📝 Sobre
 
-> Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!<br>
-> **Caso o vídeo apresente algum erro, recarregue a página!**
+> Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
 Esse projeto é a Interface (Desktop-First) da **iManager**, uma Web plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, e seus respectivos serviços. Os projetos e suas categorias ficam armazenados em sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente com JSON-Server.
 
