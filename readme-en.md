@@ -14,6 +14,7 @@
 
 # 🪙 iManager Project Interface
 
+<br>
 <p align="center">
   <a href="#-project-video-presentation">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies-used">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
