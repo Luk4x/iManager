@@ -40,17 +40,21 @@
 
 ## 📝 Sobre
 
-> Assistir o vídeo acima ou acessar o projeto online ajudará na compreensão da explicação!<br>
+> Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!<br>
 > **Caso o vídeo apresente algum erro, recarregue a página!**
 
-Esse projeto é a Interface (Desktop-First) da **iManager**, uma Web plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, consumindo sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente com JSON-Server.
+Esse projeto é a Interface (Desktop-First) da **iManager**, uma Web plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, e seus respectivos serviços. Os projetos e suas categorias ficam armazenados em sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente com JSON-Server.
 
-### Páginas
+### 📄 Páginas
 
-Resumidamente, ele é composto por 2 páginas:
+O projeto tem um total de 6 componentes de páginas, sendo eles:
 
--   A primeira realiza o cadastro dos pedidos validados pelas verificações.
--   A segunda lista os pedidos já cadastrados e também informa seus respectivos status (com um tempo de preparação aleatório entre `5` à `40` segundos) e preço (gerado a partir da quantidade de caracteres do pedido + um valor aleatório entre `1` à `50`).
+  - **Home**: Essa é a página inicial do iManager, responsável por introduzir o usuário ao site.
+  - **CreateProject**: Essa página é responsável criar um projeto.
+  - **Projects**: Essa página é responsável por listar todos os projetos criados pelo usuário, e dar a possibilidade de criação, edição e exclusão dos mesmos.
+  - **Project**: Essa página é responsável pela edição das informações básicas de um projeto e pela criação, edição e exclusão de um serviço relativo ao projeto.
+  - **Company**: Essa página é responsável por apresentar ao usuário mais informações sobre o iManager como empresa de uma forma mais profunda, organizada e instigante.
+  - **Contact**: Essa página é responsável por apresentar formas de contato entre o iManager e seus usuários.
 
 ## 📖 Como usar
 
