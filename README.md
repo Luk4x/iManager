@@ -18,7 +18,7 @@
   <video src="https://user-images.githubusercontent.com/86276393/193448357-c566da3f-dc11-4cc6-b9bb-c28579e27168.mp4">
 </p>
 
-> Acesso o projeto online **[AQUI](https://luk4x-codeburgerv1.netlify.app/)** <br>
+> Acesso o projeto online **[AQUI](https://luk4x-codeburgerv1.netlify.app/)** `<br>`
 
 ## 🚀 Tecnologias utilizadas
 
@@ -39,7 +39,13 @@
 
 ## 📝 Sobre
 
-Esse projeto é a Interface (Desktop-First) da **iManager**, uma plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, consumindo sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente em JSON-Server.<br>
+> Assistir o vídeo acima ou acessar o projeto online ajudará na compreensão da explicação!
+> **(caso o vídeo apresente algum erro, recarregue a página)**
+
+Esse projeto é a Interface (Desktop-First) da **iManager**, uma plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, consumindo sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente com JSON-Server.`<br>`
+
+### Páginas
+
 Resumidamente, ele é composto por 2 páginas:
 
 -   A primeira realiza o cadastro dos pedidos validados pelas verificações.
@@ -47,7 +53,7 @@ Resumidamente, ele é composto por 2 páginas:
 
 ## 📖 Como usar
 
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:
+Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.`<br>`No terminal:
 
 ```bash
 # Clone esse repositório:
@@ -66,6 +72,7 @@ $ yarn dev
 ```
 
 ## 🤝 Contato dos Contribuintes
+
 <table>
   <tr>
     <td align="center">
