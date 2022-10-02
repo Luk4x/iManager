@@ -82,7 +82,7 @@ export default function Company() {
                     <h3>Criamos o que simplifica a gestão das empresas</h3>
                     <p>Simplificar é tirar as burocracias da frente e conectar as soluções que a sua empresa precisa em um só lugar.</p>
                     <br />
-                    <p>Nós da iManager percebemos uma dificuldade das empresas viemos trazer a solução que ninguém trouxe: Reunimos em um Web App tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p>
+                    <p>Nós da iManager percebemos uma dificuldade das empresas e viemos trazer a solução que ninguém trouxe: Reunimos em um Web App tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <img src={CompanyImage2} alt="woman programmer working" />
