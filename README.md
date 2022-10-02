@@ -82,21 +82,21 @@ Separados em componentes de **Project**, **Layout** e **Form**, o iManager tem m
 ## 📖 Clonando o Projeto
 
 Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) previamente instalados.<br>
-Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá no [repositório da API](https://github.com/Luk4x/iManager-json-server) e faça os passos sobre como cloná-la primeiro!<br>
+Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá ao [Repositório da API](https://github.com/Luk4x/iManager-json-server) e faça os passos sobre como cloná-la primeiro!<br>
 Feito esses dois passos, no terminal:
 
 ```bash
 # Clone esse repositório com:
-$ git clone https://github.com/Luk4x/iManager.git
+> git clone https://github.com/Luk4x/iManager.git
 
 # Entre no repositório com:
-$ cd iManager
+> cd iManager
 
 # Instale as dependências com:
-$ yarn install
+> yarn install
 
 # Execute o projeto com:
-$ yarn dev
+> yarn dev
 
 # Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://127.0.0.1:5173/ ou http://localhost:5173/)
 ```
