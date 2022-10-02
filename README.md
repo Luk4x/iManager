@@ -20,6 +20,22 @@
 
 > Acesso o projeto online **[AQUI](https://luk4x-codeburgerv1.netlify.app/)** <br>
 
+## 🚀 Tecnologias utilizadas
+
+-   [ReactJS](https://pt-br.reactjs.org)
+-   [React Router v5](https://v5.reactrouter.com/web/guides/quick-start)
+-   [CSS Module](https://github.com/css-modules/css-modules)
+-   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+-   [Animate.css](https://animate.style/)
+-   [GSAP](https://greensock.com/docs/v3/Installation)
+-   [React Animate On Scroll](https://www.npmjs.com/package/react-animate-on-scroll)
+-   [React Animated Number](https://yarnpkg.com/package/react-animated-number)
+-   [React Icons](https://react-icons.github.io/react-icons/)
+-   [React Responsive Carousel](https://yarnpkg.com/package/react-responsive-carousel)
+-   [UUID](https://www.uuidgenerator.net/)
+-   [ViteJS](https://vitejs.dev/)
+-   [Yarn](https://yarnpkg.com/)
+
 ## 📝 Sobre
 
 Esse projeto é a Interface (Desktop-First) da **iManager**, uma plataforma de gestão empresarial que realiza o cadastro e a gerência de projetos, consumindo sua [API](https://github.com/Luk4x/iManager-json-server) que desenvolvi essencialmente em JSON-Server.<br>
@@ -27,15 +43,6 @@ Resumidamente, ele é composto por 2 páginas:
 
 -   A primeira realiza o cadastro dos pedidos validados pelas verificações.
 -   A segunda lista os pedidos já cadastrados e também informa seus respectivos status (com um tempo de preparação aleatório entre `5` à `40` segundos) e preço (gerado a partir da quantidade de caracteres do pedido + um valor aleatório entre `1` à `50`).
-
-## 🚀 Tecnologias utilizadas
-
--   [ReactJS](https://pt-br.reactjs.org)
--   [React Router](https://reactrouter.com/docs/en/v6/getting-started/overview)
--   [Styled-Components](https://styled-components.com)
--   [Bootstrap](https://getbootstrap.com/)
--   [BoxIcons](https://boxicons.com/)
--   [Axios](https://axios-http.com/docs/intro)
 
 ## 📖 Como usar
 
