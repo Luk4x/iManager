@@ -56,6 +56,22 @@ O projeto tem um total de 6 componentes de páginas, sendo eles:
   - **Company**: Essa página é responsável por apresentar ao usuário mais informações sobre o iManager como empresa de uma forma mais profunda, organizada e instigante.
   - **Contact**: Essa página é responsável por apresentar formas de contato entre o iManager e seus usuários.
 
+### 📑 Demais Componentes
+  
+Separados em componentes de **Project**, **Layout** e **Form**, o iManager tem mais 20 componentes, sendo eles:
+  
+  - **Navbar**: Esse componente é renderizado no **main** do projeto, e reaproveitado em todas as páginas. Ele é relativo a barra de navegação presente em todas as páginas.
+  - **Footer**: Esse componente é renderizado no **main** do projeto, e reaproveitado em todas as páginas. Ele é relativo ao rodapé presente em todas as páginas, e nele estão as **minhas redes sociais**.
+  - **Container**: Esse componente se consiste num container dinâmico que criei para evitar repetições de código.
+  - **DesktopHelpCenterShowCase**: Esse componente é relativo ao monitor que está na página de **Contact**.
+  - **MobileAppHelpCenterShowCase**: Esse componente é relativo ao celular que está na página de **Contact**.
+  - **SheeleChatBot**: Esse componente é relativo ao ChatBot presente nos componentes de **DesktopHelpCenterShowCase** e **MobileAppHelpCenterShowCase**.
+  - **IManagerFooter**: Esse componente é relativo ao rodapé do iManager que aparece nas páginas de **Company** e **Contact**.
+  - **LinkButton**: Esse componente é um botão dinâmico de redirecionamento de página.
+  - **Loading**: Esse componente é relativo a barra de carregamento que aparece enquanto algumas requisições são feitas. Ex: Ao acessar a página de **Projects**.
+  - **Message**: Esse componente é relativo as flash messages que aparecem ao realizar determinadas ações na plataforma. Ex: Ao criar um projeto.
+  - **PurpleBackground**: Esse componente é relativo ao background roxo decorativo em quase todas as páginas.
+  
 ## 📖 Como usar
 
 Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:
