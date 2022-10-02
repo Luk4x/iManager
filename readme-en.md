@@ -15,9 +15,22 @@
 # 🪙 iManager Project Interface
 
 <p align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/193448357-c566da3f-dc11-4cc6-b9bb-c28579e27168.mp4">
+  <a href="#-project-video-presentation">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies-used">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-pages">Pages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-other-components">Components</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-cloning-the-project">Cloning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contributor-contact">Contact</a>
 </p>
+<br>
 
+## 📹 Project Video Presentation
+<div align="center">
+  <video src="https://user-images.githubusercontent.com/86276393/193448357-c566da3f-dc11-4cc6-b9bb-c28579e27168.mp4">
+</div>
+
+> **If the video has any errors, reload the page!**<br>
 > Access the project online **[HERE](https://luk4x-imanager.netlify.app/)**
 
 ## 🚀 Technologies Used
@@ -40,8 +53,7 @@
 
 ## 📝 About
 
-> Watching the video above and/or accessing the project online will help you understand the explanation!<br>
-> **If the video has any errors, reload the page!**
+> Watching the video above and/or accessing the project online will help you understand the explanation!
 
 This project is the Interface (Desktop-First) of **iManager**, a business management web platform that performs the registration and management of projects, and their respective services. The projects and their categories are stored in their [API](https://github.com/Luk4x/iManager-json-server) that I developed essentially with JSON-Server.
 
@@ -115,3 +127,7 @@ After these two steps, in the terminal:
     </td>
   </tr>
 </table>
+
+<p align="right">
+  <a href="#-imanager-project-interface">Back to Top</a>
+</p>
