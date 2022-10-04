@@ -63,7 +63,7 @@ Esse projeto é a Interface (Desktop-First) da **iManager**, uma Web plataforma 
 O projeto tem um total de 6 componentes de páginas, sendo eles:
 
   - **Home**: Essa é a página inicial do iManager, responsável por introduzir o usuário ao site.
-  - **CreateProject**: Essa página é responsável criar um projeto.
+  - **CreateProject**: Essa página é responsável por criar um projeto.
   - **Projects**: Essa página é responsável por listar todos os projetos criados pelo usuário, e dar a possibilidade de criação, edição e exclusão dos mesmos.
   - **Project**: Essa página é responsável pela edição das informações básicas de um projeto e pela criação, edição e exclusão de um serviço relativo ao projeto.
   - **Company**: Essa página é responsável por apresentar ao usuário mais informações sobre o iManager como empresa de uma forma mais profunda, organizada e instigante.
@@ -95,7 +95,7 @@ Separados em componentes de **Project**, **Layout** e **Form**, o iManager tem m
 ## 📖 Clonando o Projeto
 
 Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) previamente instalados.<br>
-Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá ao [Repositório da API](https://github.com/Luk4x/iManager-json-server) e faça os passos sobre como cloná-la primeiro!<br>
+Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá ao [Repositório da API](https://github.com/Luk4x/iManager-json-server) e faça os passos sobre como cloná-la e executá-la primeiro!<br>
 Feito esses dois passos, no terminal:
 
 ```bash
